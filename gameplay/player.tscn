@@ -8,8 +8,11 @@ size = Vector2(52, 79)
 
 [sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_cfmb5"]
 properties/0/path = NodePath(".:position")
-properties/0/spawn = true
+properties/0/spawn = false
 properties/0/replication_mode = 1
+properties/1/path = NodePath(".:syncPos")
+properties/1/spawn = true
+properties/1/replication_mode = 1
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_q0834")
@@ -24,4 +27,6 @@ position = Vector2(-70, -44.5)
 shape = SubResource("RectangleShape2D_b1h6a")
 
 [node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
+replication_interval = 0.1
+delta_interval = 0.1
 replication_config = SubResource("SceneReplicationConfig_cfmb5")
