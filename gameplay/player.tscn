@@ -14,7 +14,7 @@ properties/1/path = NodePath(".:syncPos")
 properties/1/spawn = true
 properties/1/replication_mode = 1
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" groups=["Player"]]
 script = ExtResource("1_q0834")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

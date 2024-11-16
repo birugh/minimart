@@ -9,6 +9,8 @@ func _ready() -> void:
 	multiplayer.peer_disconnected.connect(peer_disconnected)
 	multiplayer.connected_to_server.connect(connected_to_server)
 	multiplayer.connection_failed.connect(connection_failed)
+	if "--server" in OS.get_cmdline_args():
+		hostGame()
 	pass
 
 func _process(delta: float) -> void:
@@ -19,6 +21,11 @@ func peer_connected(id):
 
 func peer_disconnected(id):
 	print("Player disconnected "+str(id))
+	GameManager.Player.erase(id)
+	var players = get_tree().get_nodes_in_group("Player")
+	for i in players:
+		if i.name == str(id):
+			i.queue_free()
 
 func connected_to_server():
 	print("Connected to server!")
@@ -49,7 +56,7 @@ func StartGame():
 	get_tree().root.add_child(scene)
 	self.hide()
 
-func _on_host_button_down() -> void:
+func hostGame():
 	peer = ENetMultiplayerPeer.new()
 	var error = peer.create_server(port, 2)
 	if error != OK:
@@ -59,6 +66,9 @@ func _on_host_button_down() -> void:
 	
 	multiplayer.set_multiplayer_peer(peer)
 	print("Waiting for player")
+
+func _on_host_button_down() -> void:
+	hostGame()
 	SendPlayerInformation($LineEdit.text, multiplayer.get_unique_id())
 	pass # Replace with function body.
 
