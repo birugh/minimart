@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://d6blesnjml5"]
 
-[ext_resource type="Script" path="res://Interface/singleplayer_menu.gd" id="1_bbmke"]
+[ext_resource type="Script" path="res://Scripts/singleplayer_menu.gd" id="1_bbmke"]
 
 [node name="Singleplayer" type="Control"]
 layout_mode = 3
@@ -67,3 +67,5 @@ size_flags_vertical = 3
 [node name="RightPadding" type="MarginContainer" parent="MarginContainer/HBoxContainer"]
 layout_mode = 2
 theme_override_constants/margin_right = 100
+
+[connection signal="pressed" from="MarginContainer/HBoxContainer/CustomizeContainer/VBoxContainer/Button" to="." method="_on_button_pressed"]

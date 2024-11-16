@@ -16,6 +16,10 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 247.0
+offset_top = 139.0
+offset_right = -247.0
+offset_bottom = -242.0
 grow_horizontal = 2
 grow_vertical = 2
 current_tab = 0
@@ -94,7 +98,16 @@ text = "Fullscreen
 [node name="Fullscreen" type="CheckBox" parent="TabContainer/Graphics/MarginContainer2/VBoxContainer"]
 layout_mode = 2
 
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 248.0
+offset_top = 846.0
+offset_right = 339.0
+offset_bottom = 908.0
+text = "Ok"
+
 [connection signal="value_changed" from="TabContainer/Volume/MarginContainer/VBoxContainer/Volume" to="." method="_on_volume_value_changed"]
 [connection signal="toggled" from="TabContainer/Volume/MarginContainer/VBoxContainer/Volume_Mute" to="." method="_on_check_box_toggled"]
 [connection signal="item_selected" from="TabContainer/Graphics/MarginContainer2/VBoxContainer/Resolutions" to="." method="_on_resolutions_item_selected"]
 [connection signal="toggled" from="TabContainer/Graphics/MarginContainer2/VBoxContainer/Fullscreen" to="." method="_on_fullscreen_toggled"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
