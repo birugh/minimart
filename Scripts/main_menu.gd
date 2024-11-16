@@ -1,8 +1,7 @@
 extends Control
 
 func _on_play_pressed() -> void:
-	#get_tree().change_scene_to_file(playmenu)
-	pass
+	get_tree().change_scene_to_file("res://Interface/play_menu.tscn")
 
 
 func _on_exit_pressed() -> void:
@@ -10,4 +9,4 @@ func _on_exit_pressed() -> void:
 
 
 func _on_settings_pressed() -> void:
-	get_tree().change_scene_to_file("res://settings.tscn")
+	get_tree().change_scene_to_file("res://Interface/settings.tscn")
