@@ -22,4 +22,12 @@ func _process(delta):
 		$AnimatedSprite2D.stop()
 		
 	direction = direction.normalized()
-	velocity = direction * SPEED 6
+	velocity = direction * SPEED 
+	move_and_slide()
+	
+	if Input.is_action_pressed("interaction"):
+		var area_node = get_parent().get_node("Area2D")
+		print("Kliking e")
+		if area_node.player_inside and Input.is_action_pressed("interaction"):
+			print("Player is interacting with area.")
+			area_node.emit_signal("change_scene")  # Kirim sinyal untuk pindah scene
