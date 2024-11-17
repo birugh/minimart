@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://dwmbphp2deivs"]
 
-[ext_resource type="Script" path="res://Scripts/multiplayer_menu.gd" id="1_j5jeb"]
-[ext_resource type="Script" path="res://Interface/server_browser.gd" id="2_qemi6"]
-[ext_resource type="PackedScene" uid="uid://vwhqn0raoim1" path="res://server_info.tscn" id="3_niomq"]
+[ext_resource type="Script" path="res://Scripts/MultiplayerPeer/multiplayer_menu.gd" id="1_j5jeb"]
+[ext_resource type="Script" path="res://Scripts/MultiplayerPeer/server_browser.gd" id="2_qemi6"]
+[ext_resource type="PackedScene" uid="uid://vwhqn0raoim1" path="res://Interface/server_info.tscn" id="3_niomq"]
 
 [node name="Play_Menu" type="Control"]
 layout_mode = 3

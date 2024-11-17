@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://cvhmj6r11lpld"]
 
-[ext_resource type="Texture2D" uid="uid://dpqa47etpctnw" path="res://grass.png" id="1_a8fus"]
-[ext_resource type="Script" path="res://Scripts/SceneManager.gd" id="1_btl0n"]
-[ext_resource type="PackedScene" uid="uid://k85v1qpvwydk" path="res://gameplay/player.tscn" id="2_76j74"]
+[ext_resource type="Texture2D" uid="uid://dpqa47etpctnw" path="res://Assets/grass.png" id="1_a8fus"]
+[ext_resource type="Script" path="res://Scripts/MultiplayerPeer/SceneManager.gd" id="1_btl0n"]
+[ext_resource type="PackedScene" uid="uid://k85v1qpvwydk" path="res://Gameplay/player.tscn" id="2_76j74"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_eewfk"]
 size = Vector2(1096.92, 1022.71)
