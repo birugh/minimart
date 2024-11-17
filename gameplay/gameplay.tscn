@@ -30,3 +30,7 @@ position = Vector2(84, 533)
 
 [node name="1" type="Node2D" parent="SpawnLocation" groups=["PlayerSpawnPoint"]]
 position = Vector2(1089, 514)
+
+[node name="Player" parent="." instance=ExtResource("2_76j74")]
+visible = false
+position = Vector2(340, 427)

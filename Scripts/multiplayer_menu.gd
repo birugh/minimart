@@ -11,6 +11,8 @@ func _ready() -> void:
 	multiplayer.connection_failed.connect(connection_failed)
 	if "--server" in OS.get_cmdline_args():
 		hostGame()
+		
+	$ServerBrowser.joinGame.connect(joinByIp)
 	pass
 
 func _process(delta: float) -> void:
@@ -70,18 +72,31 @@ func hostGame():
 func _on_host_button_down() -> void:
 	hostGame()
 	SendPlayerInformation($LineEdit.text, multiplayer.get_unique_id())
+	$ServerBrowser.setUpBroadCast($LineEdit.text + "'s server")
 	pass # Replace with function body.
 
 
 func _on_join_button_down() -> void:
-	peer = ENetMultiplayerPeer.new()
-	peer.create_client(Adress, port)
-	peer.get_host().compress(ENetConnection.COMPRESS_RANGE_CODER)
-	multiplayer.set_multiplayer_peer(peer)
+	joinByIp(Adress)
 	pass # Replace with function body.
 
 
+func joinByIp(ip):
+	peer = ENetMultiplayerPeer.new()
+	peer.create_client(ip, port)
+	peer.get_host().compress(ENetConnection.COMPRESS_RANGE_CODER)
+	multiplayer.set_multiplayer_peer(peer)
+	
 func _on_start_game_button_down() -> void:
 	StartGame.rpc()
 	StartGame()
+	pass # Replace with function body.
+
+
+func _on_button_button_down() -> void:
+	GameManager.Players[GameManager.Players.size() + 1] = {
+			"name" : "test",
+			"id" : 1,	
+			"score" : 0
+		}
 	pass # Replace with function body.
