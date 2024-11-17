@@ -1,7 +1,8 @@
 extends Control
 
-signal found_server
-signal server_removed
+signal found_server(ip, port, roomInfo)
+signal update_server(ip, port, roomInfo)
+#signal server_removed
 signal joinGame(ip)
 
 var broadcastTimer : Timer
@@ -48,7 +49,7 @@ func setUpBroadCast(name):
 		print("Failed to bind to broadcast port")
 		
 		
-	$BroadcastTimer.start()
+	broadcastTimer.start()
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if listener.get_available_packet_count() > 0:
@@ -62,6 +63,7 @@ func _process(delta: float) -> void:
 		
 		for i in $Panel/VBoxContainer.get_children():
 			if i.name == roomInfo.name:
+				update_server.emit(serverip, serverport, roomInfo)
 				i.get_node("Ip").text = serverip
 				i.get_node("PlayerCount").text = str(roomInfo.playerCount)
 				return
@@ -79,6 +81,7 @@ func _process(delta: float) -> void:
 			$Panel/VBoxContainer.add_child(currentInfo)
 			#$ServerBrowser.joinGame.connect(joinByIp)
 			currentInfo.joinGame.connect(joinByIp)
+			found_server.emit(serverip, serverport, roomInfo)
 			pass
 	pass
 
@@ -93,7 +96,7 @@ func _on_broadcast_timer_timeout() -> void:
 
 func cleanUp():
 	listener.close()
-	$BroadcastTimer.stop()
+	broadcastTimer.stop()
 	if broadcaster != null:
 		broadcaster.close()
 
