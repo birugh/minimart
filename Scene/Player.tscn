@@ -139,16 +139,18 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_exenr"]
-size = Vector2(25, 61)
+size = Vector2(70.5, 96.5)
 
 [node name="player" type="CharacterBody2D" groups=["Player"]]
 collision_layer = 2
 script = ExtResource("1_n4cky")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(18, 10.5)
+scale = Vector2(1.5625, 1.32813)
 sprite_frames = SubResource("SpriteFrames_lioxu")
 animation = &"left"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-1, 0)
+position = Vector2(21.75, 17.75)
 shape = SubResource("RectangleShape2D_exenr")

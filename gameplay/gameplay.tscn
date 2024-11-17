@@ -32,6 +32,4 @@ position = Vector2(84, 533)
 position = Vector2(1089, 514)
 
 [node name="Player" parent="." instance=ExtResource("2_76j74")]
-visible = false
-position = Vector2(340, 427)
-script = null
+position = Vector2(309, 577)

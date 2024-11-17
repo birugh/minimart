@@ -2,7 +2,6 @@ extends CharacterBody2D
 
 
 const SPEED = 300.0
-const JUMP_VELOCITY = -400.0
 
 var syncPos = Vector2(0,0)
 
@@ -11,22 +10,25 @@ func _ready() -> void:
 
 func _physics_process(delta: float) -> void:
 	if $MultiplayerSynchronizer.get_multiplayer_authority() == multiplayer.get_unique_id():
-		# Add the gravity.
-		if not is_on_floor():
-			velocity += get_gravity() * delta
-
-		# Handle jump.
-		if Input.is_action_just_pressed("ui_accept") and is_on_floor():
-			velocity.y = JUMP_VELOCITY
-		syncPos = global_position
-		# Get the input direction and handle the movement/deceleration.
-		# As good practice, you should replace UI actions with custom gameplay actions.
-		var direction := Input.get_axis("ui_left", "ui_right")
-		if direction:
-			velocity.x = direction * SPEED
+		var direction = Vector2.ZERO
+		if Input.is_action_pressed("move-up"):
+			$AnimatedSprite2D.play("up")
+			direction.y -= 1
+			print(direction)
+		elif Input.is_action_pressed("move-down"):
+			$AnimatedSprite2D.play("down")
+			direction.y += 1
+		elif Input.is_action_pressed("move-right"):
+			$AnimatedSprite2D.play('right')
+			direction.x += 1
+		elif Input.is_action_pressed("move-left"):
+			$AnimatedSprite2D.play("left")
+			direction.x -= 1
 		else:
-			velocity.x = move_toward(velocity.x, 0, SPEED)
-
+			$AnimatedSprite2D.stop()
+			
+		direction = direction.normalized()
+		velocity = direction * SPEED 
 		move_and_slide()
 	else:
 		global_position = global_position.lerp(syncPos, .5)
