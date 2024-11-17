@@ -22,5 +22,4 @@ func _process(delta):
 		$AnimatedSprite2D.stop()
 		
 	direction = direction.normalized()
-	velocity = direction * SPEED 
-	move_and_slide()
+	velocity = direction * SPEED 6
