@@ -11,12 +11,27 @@ config_version=5
 [application]
 
 config/name="Minimart"
+run/main_scene="res://Interface/main_menu.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+GameManager="*res://Scripts/MultiplayerPeer/GameManager.gd"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/stretch/mode="viewport"
 
 [dotnet]
 
 project/assembly_name="Minimart"
+
+[global_group]
+
+PlayerSpawnPoint=""
 
 [rendering]
 
