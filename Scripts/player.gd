@@ -25,9 +25,3 @@ func _process(delta):
 	velocity = direction * SPEED 
 	move_and_slide()
 	
-	if Input.is_action_pressed("interaction"):
-		var area_2d = get_parent().get_node("Area2D")
-		print("E is pressed")
-		if area_2d.player_inside and Input.is_action_pressed("interaction"):
-			print("Player is interacting with area.")
-			area_2d.emit_signal("change_scene")  # Kirim sinyal untuk pindah scene

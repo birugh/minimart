@@ -1,19 +1,16 @@
 extends Area2D
 
-signal change_scene
-var player_inside = false
+var entered = false
 
-func _ready():
-	connect("body_entered", Callable(self, "_on_body_entered"))
-	connect("body_exited", Callable(self, "_on_body_exited"))
-	print("Sinyal sudah terhubung")
-
-func _on_body_entered(body):
+func _on_body_entered(body: PhysicsBody2D):
+	entered = true
 	if body.is_in_group("Player"):
-		player_inside = true
 		print("Player ada di dalam area")
 
 func _on_body_exited(body):
-	if body.is_in_group("Player"):
-		player_inside = false
-		print("Player keluar dari area")
+	entered = false
+	
+func _process(delta):
+	if entered == true:
+		if Input.is_action_pressed("interaction"):
+			get_tree().change_scene_to_file("res://Scene/Map2.tscn")
