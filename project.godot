@@ -17,7 +17,13 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-InteractionManager="*res://Interaction/interaction_manager.tscn"
+GameManager="*res://Scripts/GameManager.gd"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/stretch/mode="viewport"
 
 [dotnet]
 
@@ -25,7 +31,7 @@ project/assembly_name="Minimart"
 
 [global_group]
 
-Player=""
+PlayerSpawnPoint=""
 
 [input]
 

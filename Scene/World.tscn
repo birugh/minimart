@@ -187,11 +187,12 @@ position = Vector2(570, 320)
 position = Vector2(5, 8)
 
 [node name="Area2D" type="Area2D" parent="."]
-position = Vector2(312, 76)
+position = Vector2(151, 480)
+collision_mask = 2
 script = ExtResource("2_5h8vf")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(256, 241)
+position = Vector2(-8, 3)
 shape = SubResource("RectangleShape2D_u8821")
 script = SubResource("GDScript_ygoff")
 

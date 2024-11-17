@@ -6,4 +6,4 @@ func _ready():
 
 func _on_change_scene():
 	print("Changing to Map2 scene...")
-	get_tree().change_scene("res://Scene/Map2.tscn")
+	get_tree().change_scene_to_file("res://Scene/Map2.tscn")
