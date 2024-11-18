@@ -1,7 +1,6 @@
 extends CharacterBody2D
 
-
-const SPEED = 10.0
+var SPEED = 0
 
 var syncPos = Vector2(0,0)
 
@@ -27,8 +26,13 @@ func _physics_process(delta: float) -> void:
 		else:
 			$AnimatedSprite2D.stop()
 			
+		if Input.is_action_pressed("sprint"):
+			SPEED = 220.0
+		else:
+			SPEED = 150.0
+		
 		direction = direction.normalized()
 		velocity = direction * SPEED 
 		move_and_slide()
-	else:
-		global_position = global_position.lerp(syncPos, .5)
+	#else:
+		#global_position = global_position.lerp(syncPos, .5)

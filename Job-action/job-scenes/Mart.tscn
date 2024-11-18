@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://77r4dtb3sg8o" path="res://Job-action/job-assets/Map (1).png" id="1_r2vjx"]
 [ext_resource type="PackedScene" uid="uid://fo6euyk8cvxw" path="res://Job-action/job-scenes/Player.tscn" id="1_v1r56"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_a2cde"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3a6i4"]
 texture = ExtResource("1_r2vjx")
 0:0/0 = 0
 1:0/0 = 0
@@ -3607,7 +3607,7 @@ texture = ExtResource("1_r2vjx")
 79:44/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_rn73c"]
-sources/0 = SubResource("TileSetAtlasSource_a2cde")
+sources/0 = SubResource("TileSetAtlasSource_3a6i4")
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_keebn"]
 radius = 18.2483
@@ -3654,6 +3654,7 @@ tile_set = SubResource("TileSet_rn73c")
 navigation_enabled = false
 
 [node name="Player" parent="." instance=ExtResource("1_v1r56")]
+visible = false
 z_index = 1
 position = Vector2(169, 599)
 
