@@ -3628,7 +3628,7 @@ size = Vector2(128.5, 57)
 size = Vector2(39, 737)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ibcbr"]
-size = Vector2(28, 45)
+size = Vector2(25, 45)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_00bg0"]
 size = Vector2(20, 31)
@@ -3683,54 +3683,54 @@ collision_mask = 2
 
 [node name="Displaying" type="CollisionShape2D" parent="StaticBody2D"]
 z_index = 2
-position = Vector2(95, 334)
+position = Vector2(93, 338)
 shape = SubResource("RectangleShape2D_sgsja")
 
 [node name="Displaying2" type="CollisionShape2D" parent="StaticBody2D"]
 z_index = 1
-position = Vector2(499, 326.25)
+position = Vector2(500, 331)
 rotation = 1.5708
 shape = SubResource("RectangleShape2D_hqs7p")
 
 [node name="Displaying3" type="CollisionShape2D" parent="StaticBody2D"]
 z_index = 1
-position = Vector2(600, 328)
+position = Vector2(601, 330)
 rotation = 1.5708
 shape = SubResource("RectangleShape2D_hqs7p")
 
 [node name="Displaying4" type="CollisionShape2D" parent="StaticBody2D"]
 z_index = 1
-position = Vector2(297, 326)
+position = Vector2(297, 332)
 rotation = 1.5708
 shape = SubResource("RectangleShape2D_hqs7p")
 
 [node name="Displaying5" type="CollisionShape2D" parent="StaticBody2D"]
 z_index = 1
-position = Vector2(195, 326)
+position = Vector2(194, 331)
 rotation = 1.5708
 shape = SubResource("RectangleShape2D_hqs7p")
 
 [node name="Displaying6" type="CollisionShape2D" parent="StaticBody2D"]
 z_index = 1
-position = Vector2(396, 326)
+position = Vector2(399, 331)
 rotation = 1.5708
 shape = SubResource("RectangleShape2D_hqs7p")
 
 [node name="Displaying7" type="CollisionShape2D" parent="StaticBody2D"]
 z_index = 1
-position = Vector2(801, 325)
+position = Vector2(803, 329)
 rotation = 1.5708
 shape = SubResource("RectangleShape2D_hqs7p")
 
 [node name="Displaying8" type="CollisionShape2D" parent="StaticBody2D"]
 z_index = 1
-position = Vector2(906, 327)
+position = Vector2(905, 329)
 rotation = 1.5708
 shape = SubResource("RectangleShape2D_hqs7p")
 
 [node name="Displaying9" type="CollisionShape2D" parent="StaticBody2D"]
 z_index = 1
-position = Vector2(1006, 326)
+position = Vector2(1007, 330)
 rotation = 1.5708
 shape = SubResource("RectangleShape2D_hqs7p")
 
@@ -3773,7 +3773,7 @@ position = Vector2(1301, 353)
 shape = SubResource("RectangleShape2D_2fvd7")
 
 [node name="Property" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(32, 164.5)
+position = Vector2(30.5, 164.5)
 shape = SubResource("RectangleShape2D_ibcbr")
 
 [node name="smallPropery" type="CollisionShape2D" parent="StaticBody2D"]
