@@ -54,6 +54,7 @@ func StartGame():
 		#return
 	print("Starting game on peer: ", multiplayer.get_unique_id())
 	print("Current players: ", GameManager.Player)
+	#var scene = load("res://cutscene/cutscene_intro.tscn").instantiate()
 	var scene = load("res://gameplay/gameplay.tscn").instantiate()
 	get_tree().root.add_child(scene)
 	self.hide()
