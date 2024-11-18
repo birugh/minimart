@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 
-const SPEED = 300.0
+const SPEED = 10.0
 
 var syncPos = Vector2(0,0)
 
