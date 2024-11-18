@@ -17,6 +17,11 @@ func _process(delta: float) -> void:
 	elif Input.is_action_pressed("move-left"):
 		$AnimatedSprite2D.play("left")
 		direction.x -= 1
+	elif Input.is_action_pressed("action"):
+		var area2d = get_parent().get_node("Area2D")
+		if area2d.bodyEntered and Input.is_action_pressed("action"):
+			print("Ditekan")
+			$AnimatedSprite2D.play("working")
 	else:
 		$AnimatedSprite2D.stop()
 	
@@ -24,6 +29,8 @@ func _process(delta: float) -> void:
 		SPEED = 220.0
 	else:
 		SPEED = 150.0
+	
+	
 	
 	velocity = direction * SPEED
 	move_and_slide()
