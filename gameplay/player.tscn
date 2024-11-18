@@ -228,7 +228,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b1h6a"]
-size = Vector2(22.375, 13.75)
+size = Vector2(22.375, 16.875)
 
 [sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_cfmb5"]
 properties/0/path = NodePath(".:position")
@@ -251,10 +251,11 @@ script = ExtResource("1_apmkt")
 position = Vector2(7, 9.74994)
 scale = Vector2(1.875, 1.62904)
 sprite_frames = SubResource("SpriteFrames_p7ncp")
-animation = &"down"
+animation = &"working"
+frame_progress = 0.421449
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(7, 25)
+position = Vector2(7, 23.4375)
 shape = SubResource("RectangleShape2D_b1h6a")
 
 [node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]

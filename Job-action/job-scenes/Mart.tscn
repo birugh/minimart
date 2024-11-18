@@ -1,7 +1,8 @@
-[gd_scene load_steps=17 format=4 uid="uid://bbfta71fay73a"]
+[gd_scene load_steps=19 format=4 uid="uid://bbfta71fay73a"]
 
 [ext_resource type="Texture2D" uid="uid://77r4dtb3sg8o" path="res://Job-action/job-assets/Map (1).png" id="1_r2vjx"]
 [ext_resource type="PackedScene" uid="uid://fo6euyk8cvxw" path="res://Job-action/job-scenes/Player.tscn" id="1_v1r56"]
+[ext_resource type="Script" path="res://Job-action/job-scripts/area_2d.gd" id="3_suawg"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3a6i4"]
 texture = ExtResource("1_r2vjx")
@@ -3637,13 +3638,16 @@ size = Vector2(20, 31)
 size = Vector2(44.3125, 60.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pofjn"]
-size = Vector2(55, 45.5)
+size = Vector2(55, 52.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ggddg"]
 size = Vector2(22.125, 71)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_grlnv"]
 size = Vector2(21, 59)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s6vkr"]
+size = Vector2(24.5, 24.5)
 
 [node name="Mart" type="Node2D"]
 
@@ -3653,8 +3657,7 @@ tile_map_data = PackedByteArray("AAAAAAAAAAAAAAAAAAAAAAEAAAAAAAEAAAAAAAIAAAAAAAI
 tile_set = SubResource("TileSet_rn73c")
 navigation_enabled = false
 
-[node name="Player" parent="." instance=ExtResource("1_v1r56")]
-visible = false
+[node name="Player" parent="." groups=["Player"] instance=ExtResource("1_v1r56")]
 z_index = 1
 position = Vector2(169, 599)
 
@@ -3825,7 +3828,7 @@ position = Vector2(398, 494)
 shape = SubResource("RectangleShape2D_lxahe")
 
 [node name="casheer" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(393.5, 570.25)
+position = Vector2(393.5, 573.75)
 shape = SubResource("RectangleShape2D_pofjn")
 
 [node name="casheer2" type="CollisionShape2D" parent="StaticBody2D"]
@@ -3859,3 +3862,15 @@ shape = SubResource("RectangleShape2D_grlnv")
 [node name="CollisionShape2D6" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(562, 590)
 shape = SubResource("RectangleShape2D_grlnv")
+
+[node name="Area2D" type="Area2D" parent="."]
+z_index = 1
+collision_mask = 2
+script = ExtResource("3_suawg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(377.25, 629.75)
+shape = SubResource("RectangleShape2D_s6vkr")
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]
