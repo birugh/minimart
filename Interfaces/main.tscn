@@ -1,7 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://blkp40y57dwf2"]
+[gd_scene load_steps=5 format=3 uid="uid://blkp40y57dwf2"]
 
 [ext_resource type="Script" path="res://Scripts/main.gd" id="1_7j5e5"]
-[ext_resource type="PackedScene" uid="uid://kyjyh0j5vvx5" path="res://player/player.tscn" id="2_8fhg1"]
 [ext_resource type="PackedScene" uid="uid://cboa7qsgpwkht" path="res://maps/map_1.tscn" id="3_nu30d"]
 [ext_resource type="PackedScene" uid="uid://gf0fmaoi2p1g" path="res://cutscenes/intro.tscn" id="4_mc22k"]
 
@@ -10,7 +9,6 @@ size = Vector2(200, 150)
 
 [node name="Main" type="Node"]
 script = ExtResource("1_7j5e5")
-player = ExtResource("2_8fhg1")
 map = ExtResource("3_nu30d")
 scene = ExtResource("4_mc22k")
 
@@ -104,6 +102,24 @@ placeholder_text = "Enter server IP"
 layout_mode = 2
 text = "Join"
 
+[node name="VBoxContainer2" type="VBoxContainer" parent="Menu/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="OptionButton" type="OptionButton" parent="Menu/MarginContainer/VBoxContainer/VBoxContainer2"]
+layout_mode = 2
+item_count = 2
+popup/item_0/text = "ServiceCleaner"
+popup/item_1/text = "Stocker"
+popup/item_1/id = 1
+
+[node name="Button" type="Button" parent="Menu/MarginContainer/VBoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "asdd"
+
+[node name="Button2" type="Button" parent="Menu/MarginContainer/VBoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "asdd"
+
 [node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="."]
 _spawnable_scenes = PackedStringArray("res://player/player.tscn")
 spawn_path = NodePath("../SpawnArea")
@@ -116,3 +132,6 @@ unique_name_in_owner = true
 [connection signal="pressed" from="Menu/MarginContainer/VBoxContainer/HostButton" to="." method="_on_host_button_pressed"]
 [connection signal="text_submitted" from="Menu/MarginContainer/VBoxContainer/HBoxContainer/To" to="." method="_on_to_text_submitted"]
 [connection signal="pressed" from="Menu/MarginContainer/VBoxContainer/HBoxContainer/JoinButton" to="." method="_on_join_button_pressed"]
+[connection signal="item_selected" from="Menu/MarginContainer/VBoxContainer/VBoxContainer2/OptionButton" to="." method="_on_option_button_item_selected"]
+[connection signal="pressed" from="Menu/MarginContainer/VBoxContainer/VBoxContainer2/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Menu/MarginContainer/VBoxContainer/VBoxContainer2/Button2" to="." method="_on_button_2_pressed"]
