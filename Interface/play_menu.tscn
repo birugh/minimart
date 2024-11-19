@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://c5nka0q5uel4x"]
+[gd_scene load_steps=5 format=3 uid="uid://c5nka0q5uel4x"]
 
 [ext_resource type="Script" path="res://Scripts/play_menu.gd" id="1_n27gl"]
+[ext_resource type="Texture2D" uid="uid://c0pgrqb0mr2kb" path="res://Job-action/job-assets/169040.png" id="2_2ddps"]
 [ext_resource type="Texture2D" uid="uid://b82uc3nhjxqtp" path="res://Assets/aset.png" id="2_ual75"]
 [ext_resource type="Texture2D" uid="uid://g0wfq0hj8m2j" path="res://Job-action/job-assets/merah.png" id="3_a6jsx"]
 
@@ -12,6 +13,13 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_n27gl")
+
+[node name="NinePatchRect4" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_right = 1287.0
+offset_bottom = 727.0
+texture = ExtResource("2_2ddps")
+region_rect = Rect2(0, 0, 1500, 512.403)
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -49,6 +57,7 @@ offset_bottom = 288.274
 text = "Singleplayer"
 
 [node name="NinePatchRect" type="NinePatchRect" parent="NinePatchRect"]
+layout_mode = 0
 offset_left = 418.0
 offset_top = 4.0
 offset_right = 604.0
@@ -72,6 +81,15 @@ offset_right = 512.0
 offset_bottom = 442.0
 texture = ExtResource("3_a6jsx")
 region_rect = Rect2(-0.311714, 0, 16.2233, 29.8745)
+
+[node name="NinePatchRect3" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_left = 804.0
+offset_top = 285.0
+offset_right = 956.0
+offset_bottom = 451.0
+texture = ExtResource("3_a6jsx")
+region_rect = Rect2(32.0267, -0.107607, 30.2505, 29.8152)
 
 [connection signal="pressed" from="NinePatchRect/Singleplayer_Button" to="." method="_on_singleplayer_button_pressed"]
 [connection signal="pressed" from="Multiplayer_Button" to="." method="_on_multiplayer_button_pressed"]

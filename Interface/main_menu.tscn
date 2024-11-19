@@ -17,23 +17,32 @@ script = ExtResource("1_dvwy8")
 layout_mode = 0
 offset_left = 4.0
 offset_top = 15.0
-offset_right = 1271.0
-offset_bottom = 740.0
+offset_right = 1279.0
+offset_bottom = 736.0
 texture = ExtResource("2_irj0i")
 region_rect = Rect2(13.3751, 9.03192, 1486.63, 500.593)
 
-[node name="Play_Button" type="Button" parent="."]
-layout_mode = 2
-offset_right = 41.0
-offset_bottom = 31.0
-text = "Play"
+[node name="NinePatchRect2" type="NinePatchRect" parent="NinePatchRect"]
+offset_left = 518.0
+offset_top = 302.0
+offset_right = 758.0
+offset_bottom = 414.0
+texture = ExtResource("3_l3ex8")
+region_rect = Rect2(13.0602, 195.408, 143.065, 132.551)
+patch_margin_left = 18
+patch_margin_top = 16
+patch_margin_right = 17
+patch_margin_bottom = 17
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
 
-[node name="Exit_Button" type="Button" parent="."]
+[node name="Play_Button" type="Button" parent="NinePatchRect/NinePatchRect2"]
 layout_mode = 2
-offset_top = 35.0
-offset_right = 41.0
-offset_bottom = 66.0
-text = "Exit"
+offset_left = 52.0
+offset_top = 36.0
+offset_right = 192.0
+offset_bottom = 75.0
+text = "Play"
 
 [node name="Settings_Button" type="Button" parent="."]
 layout_mode = 2
@@ -44,10 +53,10 @@ text = " "
 
 [node name="NinePatchRect2" type="NinePatchRect" parent="."]
 layout_mode = 0
-offset_left = 573.0
-offset_top = 248.0
-offset_right = 775.0
-offset_bottom = 347.0
+offset_left = 526.0
+offset_top = 481.0
+offset_right = 766.0
+offset_bottom = 593.0
 texture = ExtResource("3_l3ex8")
 region_rect = Rect2(13.0602, 195.408, 143.065, 132.551)
 patch_margin_left = 18
@@ -57,6 +66,14 @@ patch_margin_bottom = 17
 axis_stretch_horizontal = 2
 axis_stretch_vertical = 2
 
-[connection signal="pressed" from="Play_Button" to="." method="_on_play_pressed"]
-[connection signal="pressed" from="Exit_Button" to="." method="_on_exit_pressed"]
+[node name="Exit_Button" type="Button" parent="."]
+layout_mode = 2
+offset_left = 577.0
+offset_top = 521.0
+offset_right = 714.0
+offset_bottom = 558.0
+text = "Exit"
+
+[connection signal="pressed" from="NinePatchRect/NinePatchRect2/Play_Button" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Settings_Button" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="Exit_Button" to="." method="_on_exit_pressed"]
