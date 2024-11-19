@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://1r46alu562dc"]
+[gd_scene load_steps=4 format=3 uid="uid://8nm5j51jbd25"]
 
 [ext_resource type="Script" path="res://Job-action/job-scripts/dirt.gd" id="1_5dxkr"]
 [ext_resource type="Texture2D" uid="uid://ms6cq5xbuh48" path="res://Job-action/job-assets/applePixel.png" id="1_o7hba"]

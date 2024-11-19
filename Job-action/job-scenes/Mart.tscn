@@ -3875,9 +3875,14 @@ position = Vector2(580, 630)
 shape = SubResource("RectangleShape2D_s6vkr")
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 5.0
+wait_time = 10.0
 autostart = true
+
+[node name="TimerNgepel" type="Timer" parent="."]
+process_callback = 0
+wait_time = 5.0
 
 [connection signal="body_entered" from="CashierSpots" to="CashierSpots" method="_on_body_entered"]
 [connection signal="body_exited" from="CashierSpots" to="CashierSpots" method="_on_body_exited"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="TimerNgepel" to="." method="_on_timer_ngepel_timeout"]
