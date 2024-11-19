@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://tddv0grysovo"
+path="res://.godot/imported/menu game.mp3-ad5d50790c1cfa989c3c63c434d5b23d.mp3str"
+
+[deps]
+
+source_file="res://Assets/cutscene/sfx/menu game.mp3"
+dest_files=["res://.godot/imported/menu game.mp3-ad5d50790c1cfa989c3c63c434d5b23d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
