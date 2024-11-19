@@ -19,6 +19,10 @@ config/icon="res://icon.svg"
 
 Dirt="*res://Job-action/job-scripts/dirt.gd"
 GameManager="*res://Scripts/MultiplayerPeer/GameManager.gd"
+Stocks="*res://Job-action/job-scripts/stocks.gd"
+Mart="*res://Job-action/job-scripts/mart.gd"
+Items="*res://Job-action/job-scripts/items.gd"
+Foods="*res://Job-action/job-scripts/foods.gd"
 
 [display]
 

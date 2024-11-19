@@ -3,6 +3,7 @@ extends Node2D
 
 @onready var dirtScene : PackedScene = preload("res://Job-action/job-scenes/dirt.tscn")
 
+
 func _on_timer_timeout() -> void:
 	var locationX: Array[float] = [1036.0, 1176.0, 115.0, 90.0, 350.0]
 	var locationY: Array[float] = [170.0, 558.0, 585.0, 180.0, 180.0]

@@ -1,9 +1,12 @@
-[gd_scene load_steps=19 format=4 uid="uid://bbfta71fay73a"]
+[gd_scene load_steps=25 format=4 uid="uid://bbfta71fay73a"]
 
 [ext_resource type="Script" path="res://Job-action/job-scripts/mart.gd" id="1_ax4ac"]
 [ext_resource type="Texture2D" uid="uid://77r4dtb3sg8o" path="res://Job-action/job-assets/Map (1).png" id="1_r2vjx"]
 [ext_resource type="PackedScene" uid="uid://fo6euyk8cvxw" path="res://Job-action/job-scenes/Player.tscn" id="1_v1r56"]
 [ext_resource type="Script" path="res://Job-action/job-scripts/area_2d.gd" id="3_suawg"]
+[ext_resource type="Script" path="res://Job-action/job-scripts/stocks.gd" id="5_h8gbo"]
+[ext_resource type="Script" path="res://Job-action/job-scripts/items.gd" id="6_vk4m6"]
+[ext_resource type="Script" path="res://Job-action/job-scripts/foods.gd" id="7_kh74a"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3a6i4"]
 texture = ExtResource("1_r2vjx")
@@ -3647,8 +3650,19 @@ size = Vector2(21, 59)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_s6vkr"]
 size = Vector2(24.5, 24.5)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_23bl2"]
+size = Vector2(56.5, 89)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dslfy"]
+size = Vector2(56.5, 89)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_w7gkj"]
+radius = 48.5103
+
 [node name="Mart" type="Node2D"]
 script = ExtResource("1_ax4ac")
+
+[node name="GameTimer" type="Timer" parent="."]
 
 [node name="Mapping" type="TileMapLayer" parent="."]
 z_index = -5
@@ -3661,7 +3675,6 @@ z_index = 1
 position = Vector2(169, 599)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
-visible = false
 position = Vector2(3, 15)
 rotation = 6.28319
 zoom = Vector2(1.5, 1.5)
@@ -3874,15 +3887,44 @@ shape = SubResource("RectangleShape2D_s6vkr")
 position = Vector2(580, 630)
 shape = SubResource("RectangleShape2D_s6vkr")
 
-[node name="Timer" type="Timer" parent="."]
+[node name="DirtSummon" type="Timer" parent="."]
 wait_time = 10.0
 autostart = true
 
-[node name="TimerNgepel" type="Timer" parent="."]
-process_callback = 0
-wait_time = 5.0
+[node name="Items" type="Area2D" parent="."]
+z_index = 1
+collision_mask = 2
+script = ExtResource("6_vk4m6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Items"]
+position = Vector2(872, 312)
+shape = SubResource("RectangleShape2D_23bl2")
+
+[node name="Foods" type="Area2D" parent="."]
+z_index = 1
+collision_mask = 2
+script = ExtResource("7_kh74a")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foods"]
+position = Vector2(1179.75, 272)
+shape = SubResource("RectangleShape2D_dslfy")
+
+[node name="Stocks" type="Area2D" parent="."]
+z_index = 1
+collision_mask = 2
+script = ExtResource("5_h8gbo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Stocks"]
+z_index = 1
+position = Vector2(895.5, 521)
+shape = SubResource("CircleShape2D_w7gkj")
 
 [connection signal="body_entered" from="CashierSpots" to="CashierSpots" method="_on_body_entered"]
 [connection signal="body_exited" from="CashierSpots" to="CashierSpots" method="_on_body_exited"]
-[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
-[connection signal="timeout" from="TimerNgepel" to="." method="_on_timer_ngepel_timeout"]
+[connection signal="timeout" from="DirtSummon" to="." method="_on_timer_timeout"]
+[connection signal="body_entered" from="Items" to="Items" method="_on_body_entered"]
+[connection signal="body_exited" from="Items" to="Items" method="_on_body_exited"]
+[connection signal="body_entered" from="Foods" to="Foods" method="_on_body_entered"]
+[connection signal="body_exited" from="Foods" to="Foods" method="_on_body_exited"]
+[connection signal="body_entered" from="Stocks" to="Stocks" method="_on_body_entered"]
+[connection signal="body_exited" from="Stocks" to="Stocks" method="_on_body_exited"]
