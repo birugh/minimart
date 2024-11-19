@@ -1,0 +1,84 @@
+[gd_scene load_steps=5 format=3 uid="uid://gf0fmaoi2p1g"]
+
+[ext_resource type="Script" path="res://Scripts/intro.gd" id="1_lllbw"]
+
+[sub_resource type="Animation" id="Animation_erbvr"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control/RichTextLabel:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_huk1o"]
+resource_name = "intro"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control/RichTextLabel:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(2.53333),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"finished"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_g20cs"]
+_data = {
+"RESET": SubResource("Animation_erbvr"),
+"intro": SubResource("Animation_huk1o")
+}
+
+[node name="Cutscene" type="Node2D"]
+script = ExtResource("1_lllbw")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Control"]
+root_node = NodePath("../..")
+libraries = {
+"": SubResource("AnimationLibrary_g20cs")
+}
+autoplay = "intro"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Control"]
+layout_mode = 0
+offset_left = 527.0
+offset_top = 300.0
+offset_right = 712.0
+offset_bottom = 425.0
+theme_override_font_sizes/normal_font_size = 24
+text = "asdasdsa"
+visible_characters = 0
+visible_ratio = 0.0
+metadata/_edit_use_anchors_ = true
+
+[connection signal="tree_exiting" from="Control/AnimationPlayer" to="." method="_on_animation_player_tree_exiting"]

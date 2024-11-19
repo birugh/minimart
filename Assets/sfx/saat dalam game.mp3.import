@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dcxhtdyn3ndnh"
+path="res://.godot/imported/saat dalam game.mp3-73ed29bda431da0bd6b7180b77beda6b.mp3str"
+
+[deps]
+
+source_file="res://Assets/sfx/saat dalam game.mp3"
+dest_files=["res://.godot/imported/saat dalam game.mp3-73ed29bda431da0bd6b7180b77beda6b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

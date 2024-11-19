@@ -1,0 +1,137 @@
+[gd_scene load_steps=5 format=3 uid="uid://blkp40y57dwf2"]
+
+[ext_resource type="Script" path="res://Scripts/main.gd" id="1_7j5e5"]
+[ext_resource type="PackedScene" uid="uid://cboa7qsgpwkht" path="res://maps/map_1.tscn" id="3_nu30d"]
+[ext_resource type="PackedScene" uid="uid://gf0fmaoi2p1g" path="res://cutscenes/intro.tscn" id="4_mc22k"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_28auc"]
+size = Vector2(200, 150)
+
+[node name="Main" type="Node"]
+script = ExtResource("1_7j5e5")
+map = ExtResource("3_nu30d")
+scene = ExtResource("4_mc22k")
+
+[node name="MapInstance" type="Node" parent="."]
+unique_name_in_owner = true
+
+[node name="SpawnArea" type="Area2D" parent="."]
+unique_name_in_owner = true
+y_sort_enabled = true
+position = Vector2(200, 150)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SpawnArea"]
+shape = SubResource("RectangleShape2D_28auc")
+
+[node name="Server" type="Control" parent="."]
+unique_name_in_owner = true
+visible = false
+modulate = Color(0, 1, 0, 1)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PublicIP" type="Label" parent="Server"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 23.0
+grow_horizontal = 2
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="ReferenceRect" type="ReferenceRect" parent="Server"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+border_color = Color(1, 1, 1, 1)
+border_width = 6.0
+editor_only = false
+
+[node name="Menu" type="PanelContainer" parent="."]
+unique_name_in_owner = true
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_lock_ = true
+
+[node name="MarginContainer" type="MarginContainer" parent="Menu"]
+layout_mode = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Menu/MarginContainer"]
+layout_mode = 2
+
+[node name="HostButton" type="Button" parent="Menu/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Start server"
+
+[node name="HSeparator" type="HSeparator" parent="Menu/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Menu/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="To" type="LineEdit" parent="Menu/MarginContainer/VBoxContainer/HBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(140, 0)
+layout_mode = 2
+placeholder_text = "Enter server IP"
+
+[node name="JoinButton" type="Button" parent="Menu/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Join"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Menu/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="OptionButton" type="OptionButton" parent="Menu/MarginContainer/VBoxContainer/VBoxContainer2"]
+layout_mode = 2
+item_count = 2
+popup/item_0/text = "ServiceCleaner"
+popup/item_1/text = "Stocker"
+popup/item_1/id = 1
+
+[node name="Button" type="Button" parent="Menu/MarginContainer/VBoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "asdd"
+
+[node name="Button2" type="Button" parent="Menu/MarginContainer/VBoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "asdd"
+
+[node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="."]
+_spawnable_scenes = PackedStringArray("res://player/player.tscn")
+spawn_path = NodePath("../SpawnArea")
+
+[node name="Cutscene" type="Node" parent="."]
+
+[node name="Content" type="Node2D" parent="Cutscene"]
+unique_name_in_owner = true
+
+[connection signal="pressed" from="Menu/MarginContainer/VBoxContainer/HostButton" to="." method="_on_host_button_pressed"]
+[connection signal="text_submitted" from="Menu/MarginContainer/VBoxContainer/HBoxContainer/To" to="." method="_on_to_text_submitted"]
+[connection signal="pressed" from="Menu/MarginContainer/VBoxContainer/HBoxContainer/JoinButton" to="." method="_on_join_button_pressed"]
+[connection signal="item_selected" from="Menu/MarginContainer/VBoxContainer/VBoxContainer2/OptionButton" to="." method="_on_option_button_item_selected"]
+[connection signal="pressed" from="Menu/MarginContainer/VBoxContainer/VBoxContainer2/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Menu/MarginContainer/VBoxContainer/VBoxContainer2/Button2" to="." method="_on_button_2_pressed"]

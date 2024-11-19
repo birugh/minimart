@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bj0we4xdfa3cl"
+path="res://.godot/imported/game berakhir.mp3-9d95ba1ce457a9b8912cb5184e42ebc3.mp3str"
+
+[deps]
+
+source_file="res://Assets/sfx/game berakhir.mp3"
+dest_files=["res://.godot/imported/game berakhir.mp3-9d95ba1ce457a9b8912cb5184e42ebc3.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
