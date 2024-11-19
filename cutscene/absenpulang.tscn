@@ -457,6 +457,7 @@ animations = [{
 [node name="Node2D" type="Node2D" node_paths=PackedStringArray("animation_player")]
 script = ExtResource("1_3j3nb")
 animation_player = NodePath("AnimationPlayer")
+next_scene = null
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -474,7 +475,7 @@ anchor_bottom = 1.0
 offset_left = -2.0
 offset_top = -1.0
 offset_right = 20.0
-offset_bottom = -7.0
+offset_bottom = 48.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_uw4rj")
