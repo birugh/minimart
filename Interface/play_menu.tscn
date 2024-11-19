@@ -50,10 +50,14 @@ anchor_left = -2.871
 anchor_top = -2.857
 anchor_right = -2.871
 anchor_bottom = -2.857
-offset_left = 573.006
-offset_top = 257.274
-offset_right = 676.006
-offset_bottom = 288.274
+offset_left = 552.006
+offset_top = 251.274
+offset_right = 696.006
+offset_bottom = 291.274
+theme_override_colors/font_hover_pressed_color = Color(0.6968, 0.789512, 0.975525, 1)
+theme_override_colors/font_hover_color = Color(0.698039, 0.788235, 0.976471, 1)
+theme_override_colors/font_color = Color(0.556392, 0.903989, 1, 1)
+theme_override_font_sizes/font_size = 23
 text = "Singleplayer"
 
 [node name="NinePatchRect" type="NinePatchRect" parent="NinePatchRect"]
@@ -67,16 +71,20 @@ region_rect = Rect2(174, 249, 80, 40)
 
 [node name="Multiplayer_Button" type="Button" parent="."]
 layout_mode = 2
-offset_left = 835.0
-offset_top = 488.0
-offset_right = 932.0
-offset_bottom = 519.0
+offset_left = 819.0
+offset_top = 482.0
+offset_right = 954.0
+offset_bottom = 522.0
+theme_override_colors/font_disabled_color = Color(0.698039, 0.788235, 0.976471, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.698039, 0.788235, 0.976471, 1)
+theme_override_colors/font_color = Color(0.556863, 0.905882, 1, 1)
+theme_override_font_sizes/font_size = 23
 text = "Multiplayer"
 
 [node name="NinePatchRect2" type="NinePatchRect" parent="."]
 layout_mode = 0
 offset_left = 412.0
-offset_top = 290.0
+offset_top = 275.0
 offset_right = 512.0
 offset_bottom = 442.0
 texture = ExtResource("3_a6jsx")
@@ -84,10 +92,10 @@ region_rect = Rect2(-0.311714, 0, 16.2233, 29.8745)
 
 [node name="NinePatchRect3" type="NinePatchRect" parent="."]
 layout_mode = 0
-offset_left = 804.0
-offset_top = 285.0
-offset_right = 956.0
-offset_bottom = 451.0
+offset_left = 807.0
+offset_top = 280.0
+offset_right = 959.0
+offset_bottom = 446.0
 texture = ExtResource("3_a6jsx")
 region_rect = Rect2(32.0267, -0.107607, 30.2505, 29.8152)
 
