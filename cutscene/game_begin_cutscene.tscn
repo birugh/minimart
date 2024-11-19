@@ -392,7 +392,7 @@ next_scene = ExtResource("2_x604a")
 offset_left = 500.0
 offset_top = 500.0
 offset_right = 839.0
-offset_bottom = 550.0
+offset_bottom = 568.715
 
 [node name="NinePatchRect" type="NinePatchRect" parent="CanvasLayer/Panel"]
 layout_mode = 1

@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://cn616gal20dwk"]
+
+[ext_resource type="Texture2D" uid="uid://j1cyabeymc1g" path="res://Assets/cutscene/k1ac1xpb31wy.png" id="1_78m7y"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_78m7y")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Sprite2D"]
+offset_left = 545.0
+offset_top = 307.0
+offset_right = 766.0
+offset_bottom = 398.0
+text = "[center]"
