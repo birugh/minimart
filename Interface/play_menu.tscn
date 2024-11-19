@@ -1,9 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://c5nka0q5uel4x"]
+[gd_scene load_steps=6 format=3 uid="uid://c5nka0q5uel4x"]
 
 [ext_resource type="Script" path="res://Scripts/play_menu.gd" id="1_n27gl"]
 [ext_resource type="Texture2D" uid="uid://c0pgrqb0mr2kb" path="res://Job-action/job-assets/169040.png" id="2_2ddps"]
 [ext_resource type="Texture2D" uid="uid://b82uc3nhjxqtp" path="res://Assets/aset.png" id="2_ual75"]
 [ext_resource type="Texture2D" uid="uid://g0wfq0hj8m2j" path="res://Job-action/job-assets/merah.png" id="3_a6jsx"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_rlbi1"]
+font_size = 38
 
 [node name="Play_Menu" type="Control"]
 layout_mode = 3
@@ -62,19 +65,19 @@ text = "Singleplayer"
 
 [node name="NinePatchRect" type="NinePatchRect" parent="NinePatchRect"]
 layout_mode = 0
-offset_left = 418.0
-offset_top = 4.0
-offset_right = 604.0
-offset_bottom = 86.0
+offset_left = 373.0
+offset_top = 8.0
+offset_right = 559.0
+offset_bottom = 90.0
 texture = ExtResource("2_ual75")
 region_rect = Rect2(174, 249, 80, 40)
 
 [node name="Multiplayer_Button" type="Button" parent="."]
 layout_mode = 2
-offset_left = 819.0
-offset_top = 482.0
-offset_right = 954.0
-offset_bottom = 522.0
+offset_left = 772.0
+offset_top = 485.0
+offset_right = 907.0
+offset_bottom = 525.0
 theme_override_colors/font_disabled_color = Color(0.698039, 0.788235, 0.976471, 1)
 theme_override_colors/font_hover_pressed_color = Color(0.698039, 0.788235, 0.976471, 1)
 theme_override_colors/font_color = Color(0.556863, 0.905882, 1, 1)
@@ -92,12 +95,22 @@ region_rect = Rect2(-0.311714, 0, 16.2233, 29.8745)
 
 [node name="NinePatchRect3" type="NinePatchRect" parent="."]
 layout_mode = 0
-offset_left = 807.0
-offset_top = 280.0
-offset_right = 959.0
-offset_bottom = 446.0
+offset_left = 762.0
+offset_top = 279.0
+offset_right = 914.0
+offset_bottom = 445.0
 texture = ExtResource("3_a6jsx")
 region_rect = Rect2(32.0267, -0.107607, 30.2505, 29.8152)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 516.0
+offset_top = 31.0
+offset_right = 782.0
+offset_bottom = 84.0
+text = "Select a player
+"
+label_settings = SubResource("LabelSettings_rlbi1")
 
 [connection signal="pressed" from="NinePatchRect/Singleplayer_Button" to="." method="_on_singleplayer_button_pressed"]
 [connection signal="pressed" from="Multiplayer_Button" to="." method="_on_multiplayer_button_pressed"]
