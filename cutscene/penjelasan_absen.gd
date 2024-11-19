@@ -1,11 +1,16 @@
 extends Node2D
 
+@export var animation_player : AnimationPlayer
+@export var autoplay : bool = false
+@export var next_scene : PackedScene
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
+func _input(event):
+	if event.is_action_pressed("next") and not animation_player.is_playing():
+		animation_player.play()
+		
+func pause():
+	if autoplay == false:
+		animation_player.pause()
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+func change_scene():
+	get_tree().change_scene_to_packed(next_scene)
