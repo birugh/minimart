@@ -1,7 +1,9 @@
-[gd_scene load_steps=24 format=3 uid="uid://ciunp34g8yjln"]
+[gd_scene load_steps=26 format=3 uid="uid://ciunp34g8yjln"]
 
 [ext_resource type="Texture2D" uid="uid://j1cyabeymc1g" path="res://Assets/cutscene/k1ac1xpb31wy.png" id="1_fr43e"]
+[ext_resource type="Script" path="res://cutscene/end.gd" id="1_jrs4w"]
 [ext_resource type="Texture2D" uid="uid://bah6eq25togk6" path="res://Assets/cutscene/maprumah.png" id="2_x8op5"]
+[ext_resource type="PackedScene" uid="uid://cn616gal20dwk" path="res://cutscene/penjelasanoutro.tscn" id="2_xc7tg"]
 [ext_resource type="Texture2D" uid="uid://b8bar3cusf3j8" path="res://Assets/cutscene/charactermain.png" id="3_aogge"]
 
 [sub_resource type="Animation" id="Animation_jslt1"]
@@ -54,6 +56,20 @@ tracks/3/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
 "values": [&"atas", &"kanan", &"atas", &"kanan"]
+}
+tracks/4/type = "method"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath(".")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(6.73333),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"change_scene"
+}]
 }
 
 [sub_resource type="Animation" id="Animation_23xr7"]
@@ -237,6 +253,8 @@ animations = [{
 }]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_jrs4w")
+next_scene = ExtResource("2_xc7tg")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
 position = Vector2(538, 518)
@@ -260,4 +278,3 @@ position = Vector2(471, 405)
 scale = Vector2(4.00806, 4.00806)
 sprite_frames = SubResource("SpriteFrames_0e8tp")
 animation = &"atas"
-frame = 3

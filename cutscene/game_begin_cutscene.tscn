@@ -1,9 +1,8 @@
-[gd_scene load_steps=27 format=3 uid="uid://dtiigvh45cy2y"]
+[gd_scene load_steps=26 format=3 uid="uid://dtiigvh45cy2y"]
 
 [ext_resource type="Script" path="res://cutscene/game_begin_cutscene.gd" id="1_0x5yh"]
 [ext_resource type="Texture2D" uid="uid://77r4dtb3sg8o" path="res://Job-action/job-assets/Map (1).png" id="1_6mxkv"]
 [ext_resource type="Texture2D" uid="uid://dov0ol13q85wi" path="res://Assets/cutscene/aset.png" id="2_q2q7c"]
-[ext_resource type="PackedScene" uid="uid://cvhmj6r11lpld" path="res://gameplay/gameplay.tscn" id="2_x604a"]
 [ext_resource type="FontFile" uid="uid://bjpucpufshb5q" path="res://Assets/Tiny5-Regular.ttf" id="3_8inb8"]
 [ext_resource type="Texture2D" uid="uid://c4jxjou7bqtm5" path="res://Job-action/job-assets/abu.png" id="3_axgh7"]
 
@@ -207,7 +206,7 @@ tracks/7/keys = {
 }
 tracks/8/type = "method"
 tracks/8/imported = false
-tracks/8/enabled = false
+tracks/8/enabled = true
 tracks/8/path = NodePath(".")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
@@ -384,7 +383,6 @@ animations = [{
 [node name="GameCutscene" type="Node2D" node_paths=PackedStringArray("animation_player")]
 script = ExtResource("1_0x5yh")
 animation_player = NodePath("AnimationPlayer")
-next_scene = ExtResource("2_x604a")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -392,7 +390,7 @@ next_scene = ExtResource("2_x604a")
 offset_left = 500.0
 offset_top = 500.0
 offset_right = 839.0
-offset_bottom = 568.715
+offset_bottom = 579.0
 
 [node name="NinePatchRect" type="NinePatchRect" parent="CanvasLayer/Panel"]
 layout_mode = 1
@@ -449,4 +447,3 @@ position = Vector2(679, 679)
 scale = Vector2(3.52445, 3.52445)
 sprite_frames = SubResource("SpriteFrames_qcbeb")
 animation = &"atas"
-frame = 1

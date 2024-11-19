@@ -1,9 +1,10 @@
-[gd_scene load_steps=30 format=3 uid="uid://d3kfgxn0gpak"]
+[gd_scene load_steps=31 format=3 uid="uid://d3kfgxn0gpak"]
 
 [ext_resource type="Script" path="res://cutscene/absenpulang.gd" id="1_3j3nb"]
 [ext_resource type="Texture2D" uid="uid://77r4dtb3sg8o" path="res://Job-action/job-assets/Map (1).png" id="1_nd74f"]
 [ext_resource type="Texture2D" uid="uid://dov0ol13q85wi" path="res://Assets/cutscene/aset.png" id="1_uw4rj"]
 [ext_resource type="Texture2D" uid="uid://c4jxjou7bqtm5" path="res://Job-action/job-assets/abu.png" id="2_5hj6c"]
+[ext_resource type="PackedScene" uid="uid://ckyt4ldncm76q" path="res://cutscene/penjelasan_absen.tscn" id="2_bicpm"]
 [ext_resource type="FontFile" uid="uid://bjpucpufshb5q" path="res://Assets/Tiny5-Regular.ttf" id="2_my4yy"]
 [ext_resource type="Texture2D" uid="uid://j1cyabeymc1g" path="res://Assets/cutscene/k1ac1xpb31wy.png" id="6_1bsee"]
 
@@ -126,8 +127,8 @@ tracks/9/path = NodePath(".")
 tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/keys = {
-"times": PackedFloat32Array(2.7, 5.23333, 7.03333),
-"transitions": PackedFloat32Array(1, 1, 1),
+"times": PackedFloat32Array(2.7, 5.23333, 7.03333, 14.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
 "values": [{
 "args": [],
 "method": &"pause"
@@ -137,6 +138,9 @@ tracks/9/keys = {
 }, {
 "args": [],
 "method": &"pause"
+}, {
+"args": [],
+"method": &"change_scene"
 }]
 }
 tracks/10/type = "value"
@@ -457,7 +461,7 @@ animations = [{
 [node name="Node2D" type="Node2D" node_paths=PackedStringArray("animation_player")]
 script = ExtResource("1_3j3nb")
 animation_player = NodePath("AnimationPlayer")
-next_scene = null
+next_scene = ExtResource("2_bicpm")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
