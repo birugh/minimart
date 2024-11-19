@@ -1,6 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://d6blesnjml5"]
+[gd_scene load_steps=6 format=3 uid="uid://d6blesnjml5"]
 
 [ext_resource type="Script" path="res://Scripts/singleplayer_menu.gd" id="1_bbmke"]
+[ext_resource type="Texture2D" uid="uid://c0pgrqb0mr2kb" path="res://Job-action/job-assets/169040.png" id="2_v0ad3"]
+[ext_resource type="Texture2D" uid="uid://bvpwg7hb8s8yt" path="res://Job-action/job-assets/aset.png" id="3_gedae"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_sr0go"]
+font_size = 36
+
+[sub_resource type="LabelSettings" id="LabelSettings_mqmjm"]
+font_size = 33
 
 [node name="Singleplayer" type="Control"]
 layout_mode = 3
@@ -10,6 +18,13 @@ offset_right = 0.199951
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_bbmke")
+
+[node name="NinePatchRect5" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_right = 1282.0
+offset_bottom = 726.0
+texture = ExtResource("2_v0ad3")
+region_rect = Rect2(0, 0, 1500, 514.53)
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -67,5 +82,68 @@ size_flags_vertical = 3
 [node name="RightPadding" type="MarginContainer" parent="MarginContainer/HBoxContainer"]
 layout_mode = 2
 theme_override_constants/margin_right = 100
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_left = 143.0
+offset_top = 127.0
+offset_right = 494.0
+offset_bottom = 653.0
+texture = ExtResource("3_gedae")
+region_rect = Rect2(267.653, 25.6388, 145.079, 93.1701)
+
+[node name="NinePatchRect2" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_left = 564.0
+offset_top = 265.0
+offset_right = 734.0
+offset_bottom = 347.0
+texture = ExtResource("3_gedae")
+region_rect = Rect2(268.984, 125.464, 135.762, 37.268)
+
+[node name="NinePatchRect" type="NinePatchRect" parent="NinePatchRect2"]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 203.0
+offset_right = 174.0
+offset_bottom = 284.0
+texture = ExtResource("3_gedae")
+region_rect = Rect2(268.984, 161.401, 139.755, 37.268)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 597.0
+offset_top = 276.0
+offset_right = 701.0
+offset_bottom = 326.0
+text = "Name"
+label_settings = SubResource("LabelSettings_sr0go")
+
+[node name="Label" type="Label" parent="Label"]
+layout_mode = 1
+anchors_preset = -1
+offset_left = -4.0
+offset_top = 209.0
+offset_right = 111.0
+offset_bottom = 255.0
+text = "Profesi"
+label_settings = SubResource("LabelSettings_mqmjm")
+
+[node name="NinePatchRect3" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_left = 789.0
+offset_top = 268.0
+offset_right = 1118.0
+offset_bottom = 332.0
+texture = ExtResource("3_gedae")
+region_rect = Rect2(267.653, 124.133, 141.086, 35.937)
+
+[node name="NinePatchRect4" type="NinePatchRect" parent="."]
+offset_left = 789.0
+offset_top = 475.0
+offset_right = 1118.0
+offset_bottom = 539.0
+texture = ExtResource("3_gedae")
+region_rect = Rect2(267.653, 124.133, 141.086, 35.937)
 
 [connection signal="pressed" from="MarginContainer/HBoxContainer/CustomizeContainer/VBoxContainer/Button" to="." method="_on_button_pressed"]
