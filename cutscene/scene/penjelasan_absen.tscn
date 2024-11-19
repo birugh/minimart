@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://ckyt4ldncm76q"]
 
-[ext_resource type="Script" path="res://cutscene/penjelasan_absen.gd" id="1_cdktr"]
-[ext_resource type="PackedScene" uid="uid://ciunp34g8yjln" path="res://cutscene/end.tscn" id="2_33ouw"]
+[ext_resource type="Script" path="res://cutscene/scripts/penjelasan_absen.gd" id="1_cdktr"]
+[ext_resource type="PackedScene" uid="uid://ciunp34g8yjln" path="res://cutscene/scene/end.tscn" id="2_33ouw"]
 [ext_resource type="Texture2D" uid="uid://j1cyabeymc1g" path="res://Assets/cutscene/k1ac1xpb31wy.png" id="3_ydwlj"]
 [ext_resource type="FontFile" uid="uid://bjpucpufshb5q" path="res://Assets/Tiny5-Regular.ttf" id="4_ru70a"]
 

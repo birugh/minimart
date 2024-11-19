@@ -1,9 +1,9 @@
 [gd_scene load_steps=26 format=3 uid="uid://ciunp34g8yjln"]
 
 [ext_resource type="Texture2D" uid="uid://j1cyabeymc1g" path="res://Assets/cutscene/k1ac1xpb31wy.png" id="1_fr43e"]
-[ext_resource type="Script" path="res://cutscene/end.gd" id="1_jrs4w"]
+[ext_resource type="Script" path="res://cutscene/scripts/end.gd" id="1_jrs4w"]
 [ext_resource type="Texture2D" uid="uid://bah6eq25togk6" path="res://Assets/cutscene/maprumah.png" id="2_x8op5"]
-[ext_resource type="PackedScene" uid="uid://cn616gal20dwk" path="res://cutscene/penjelasanoutro.tscn" id="2_xc7tg"]
+[ext_resource type="PackedScene" uid="uid://cn616gal20dwk" path="res://cutscene/scene/penjelasanoutro.tscn" id="2_xc7tg"]
 [ext_resource type="Texture2D" uid="uid://b8bar3cusf3j8" path="res://Assets/cutscene/charactermain.png" id="3_aogge"]
 
 [sub_resource type="Animation" id="Animation_jslt1"]

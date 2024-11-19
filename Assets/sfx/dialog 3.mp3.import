@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dnc31dl4nrwe1"
+path="res://.godot/imported/dialog 3.mp3-10bf5b4147b902c7965923d31c38f61d.mp3str"
+
+[deps]
+
+source_file="res://Assets/sfx/dialog 3.mp3"
+dest_files=["res://.godot/imported/dialog 3.mp3-10bf5b4147b902c7965923d31c38f61d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

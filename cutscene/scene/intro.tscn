@@ -1,8 +1,8 @@
 [gd_scene load_steps=8 format=3 uid="uid://dras6re4i5vdp"]
 
-[ext_resource type="Script" path="res://cutscene/intro.gd" id="1_4v64p"]
+[ext_resource type="Script" path="res://cutscene/scripts/intro.gd" id="1_4v64p"]
 [ext_resource type="Texture2D" uid="uid://j1cyabeymc1g" path="res://Assets/cutscene/k1ac1xpb31wy.png" id="1_xtss3"]
-[ext_resource type="PackedScene" uid="uid://dtiigvh45cy2y" path="res://cutscene/game_begin_cutscene.tscn" id="2_geacv"]
+[ext_resource type="PackedScene" uid="uid://dtiigvh45cy2y" path="res://cutscene/scene/game_begin_cutscene.tscn" id="2_geacv"]
 [ext_resource type="FontFile" uid="uid://bjpucpufshb5q" path="res://Assets/Tiny5-Regular.ttf" id="2_qok2r"]
 
 [sub_resource type="Animation" id="Animation_niokv"]

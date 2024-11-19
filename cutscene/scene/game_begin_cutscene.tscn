@@ -1,6 +1,6 @@
 [gd_scene load_steps=26 format=3 uid="uid://dtiigvh45cy2y"]
 
-[ext_resource type="Script" path="res://cutscene/game_begin_cutscene.gd" id="1_0x5yh"]
+[ext_resource type="Script" path="res://cutscene/scripts/game_begin_cutscene.gd" id="1_0x5yh"]
 [ext_resource type="Texture2D" uid="uid://77r4dtb3sg8o" path="res://Job-action/job-assets/Map (1).png" id="1_6mxkv"]
 [ext_resource type="Texture2D" uid="uid://dov0ol13q85wi" path="res://Assets/cutscene/aset.png" id="2_q2q7c"]
 [ext_resource type="FontFile" uid="uid://bjpucpufshb5q" path="res://Assets/Tiny5-Regular.ttf" id="3_8inb8"]

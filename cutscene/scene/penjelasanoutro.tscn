@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://cn616gal20dwk"]
 
-[ext_resource type="Script" path="res://cutscene/penjelasanoutro.gd" id="1_8gl47"]
+[ext_resource type="Script" path="res://cutscene/scripts/penjelasanoutro.gd" id="1_8gl47"]
 [ext_resource type="Texture2D" uid="uid://j1cyabeymc1g" path="res://Assets/cutscene/k1ac1xpb31wy.png" id="1_78m7y"]
 [ext_resource type="FontFile" uid="uid://bjpucpufshb5q" path="res://Assets/Tiny5-Regular.ttf" id="2_h7ow4"]
 [ext_resource type="PackedScene" uid="uid://fkcmqsvkk6os" path="res://Interface/main_menu.tscn" id="2_pp7y7"]

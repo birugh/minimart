@@ -3,9 +3,9 @@
 [ext_resource type="Texture2D" uid="uid://bah6eq25togk6" path="res://Assets/cutscene/maprumah.png" id="1_4vffq"]
 [ext_resource type="FontFile" uid="uid://bjpucpufshb5q" path="res://Assets/Tiny5-Regular.ttf" id="1_34f7y"]
 [ext_resource type="Texture2D" uid="uid://j1cyabeymc1g" path="res://Assets/cutscene/k1ac1xpb31wy.png" id="1_guxle"]
-[ext_resource type="Script" path="res://cutscene/cutscene_intro.gd" id="1_inorl"]
+[ext_resource type="Script" path="res://cutscene/scripts/cutscene_intro.gd" id="1_inorl"]
 [ext_resource type="Texture2D" uid="uid://b8bar3cusf3j8" path="res://Assets/cutscene/charactermain.png" id="2_ncmwa"]
-[ext_resource type="PackedScene" uid="uid://dras6re4i5vdp" path="res://cutscene/intro.tscn" id="2_o4hpv"]
+[ext_resource type="PackedScene" uid="uid://dras6re4i5vdp" path="res://cutscene/scene/intro.tscn" id="2_o4hpv"]
 [ext_resource type="Texture2D" uid="uid://dov0ol13q85wi" path="res://Assets/cutscene/aset.png" id="3_nqexp"]
 
 [sub_resource type="Animation" id="Animation_eh0i8"]
