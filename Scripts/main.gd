@@ -1,20 +1,9 @@
 extends Node
 
 
-@export var player : PackedScene
+@export var player : PackedScene = preload("res://player/player.tscn")
 @export var map : PackedScene
 @export var scene: PackedScene
-
-#func _on_option_button_item_selected(index: int) -> void:
-	#match index:
-		#0: 
-			#player = preload("res://player/player.tscn")
-			#print("ob")
-		#1: 
-			#player = preload("res://player/stocker.tscn")
-			#print("stocker")
-	#pass # Replace with function body.
-
 
 func _ready() -> void:
 	print(player)
@@ -52,6 +41,7 @@ func _on_to_text_submitted(new_text: String) -> void:
 
 func load_game():
 	%Menu.hide()
+	%ButtonBack.hide()
 	%MapInstance.add_child(map.instantiate())
 	add_player.rpc(multiplayer.get_unique_id())
 	%Content.add_child(scene.instantiate())
@@ -69,7 +59,6 @@ func add_player(id):
 	var player_instance = player.instantiate()
 	player_instance.name = str(id)
 	%SpawnArea.add_child(player_instance)
-	player = null
 
 
 @rpc("any_peer")
@@ -79,9 +68,5 @@ func remove_player(id):
 
 
 func _on_button_pressed() -> void:
-	player = load("res://player/player.tscn")
-	print(player)
-
-func _on_button_2_pressed() -> void:
-	player = preload("res://player/stocker.tscn")
-	print(player)
+	get_tree().change_scene_to_file("res://Interface/main_menu.tscn")
+	pass # Replace with function body.

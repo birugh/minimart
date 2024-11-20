@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://fkcmqsvkk6os"]
+[gd_scene load_steps=6 format=3 uid="uid://fkcmqsvkk6os"]
 
 [ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_dvwy8"]
 [ext_resource type="Texture2D" uid="uid://cagyx8p1bd7po" path="res://Assets/169040.png" id="2_irj0i"]
 [ext_resource type="Texture2D" uid="uid://b82uc3nhjxqtp" path="res://Assets/aset.png" id="3_l3ex8"]
 [ext_resource type="Texture2D" uid="uid://c42i2bt70h8fw" path="res://Interface/3524659.png" id="4_o0ex6"]
+[ext_resource type="FontFile" uid="uid://bjpucpufshb5q" path="res://Assets/Tiny5-Regular.ttf" id="5_2rt3f"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -69,6 +70,16 @@ offset_right = 534.0
 offset_bottom = 454.0
 theme_override_font_sizes/font_size = 28
 text = "Exit"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 429.0
+offset_top = 126.0
+offset_right = 879.0
+offset_bottom = 261.0
+theme_override_fonts/font = ExtResource("5_2rt3f")
+theme_override_font_sizes/font_size = 120
+text = "Minimart"
 
 [connection signal="pressed" from="NinePatchRect/NinePatchRect2/Play_Button" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Settings_Button" to="." method="_on_settings_pressed"]

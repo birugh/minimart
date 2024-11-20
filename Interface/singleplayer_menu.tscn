@@ -139,6 +139,7 @@ texture = ExtResource("3_gedae")
 region_rect = Rect2(267.653, 124.133, 141.086, 35.937)
 
 [node name="NinePatchRect4" type="NinePatchRect" parent="."]
+layout_mode = 0
 offset_left = 789.0
 offset_top = 475.0
 offset_right = 1118.0

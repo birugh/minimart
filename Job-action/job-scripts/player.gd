@@ -4,7 +4,7 @@ var SPEED = 0
 
 func _ready() -> void:
 	set_multiplayer_authority(name.to_int())
-	%DisplayAuthority.visible = is_multiplayer_authority()
+	#%DisplayAuthority.visible = is_multiplayer_authority()
 
 func _process(delta: float) -> void:
 	if not is_multiplayer_authority(): return

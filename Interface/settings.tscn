@@ -115,9 +115,9 @@ layout_mode = 2
 [node name="Button" type="Button" parent="."]
 layout_mode = 0
 offset_left = 248.0
-offset_top = 846.0
+offset_top = 484.0
 offset_right = 339.0
-offset_bottom = 908.0
+offset_bottom = 546.0
 text = "Ok"
 
 [connection signal="value_changed" from="TabContainer/Volume/MarginContainer/VBoxContainer/Volume" to="." method="_on_volume_value_changed"]
