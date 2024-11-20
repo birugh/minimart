@@ -3,7 +3,7 @@ extends Node
 
 @export var player : PackedScene = preload("res://player/player.tscn")
 @export var map : PackedScene
-@export var scene: PackedScene
+#@export var scene: PacscnekedScene
 
 func _ready() -> void:
 	print(player)
@@ -44,7 +44,7 @@ func load_game():
 	%ButtonBack.hide()
 	%MapInstance.add_child(map.instantiate())
 	add_player.rpc(multiplayer.get_unique_id())
-	%Content.add_child(scene.instantiate())
+	#%Content.add_child(scene.instantiate())
 	
 
 func connection_lost():
