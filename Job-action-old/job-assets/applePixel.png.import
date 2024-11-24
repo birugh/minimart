@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d2dgq58nbpjd8"
-path="res://.godot/imported/spritesheets.png-adefd7d25a91ef4ced3651bee729ff1f.ctex"
+uid="uid://ms6cq5xbuh48"
+path="res://.godot/imported/applePixel.png-7bd388b51adab07ce4b06715c9170d2b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/spritesheets.png"
-dest_files=["res://.godot/imported/spritesheets.png-adefd7d25a91ef4ced3651bee729ff1f.ctex"]
+source_file="res://Job-action/job-assets/applePixel.png"
+dest_files=["res://.godot/imported/applePixel.png-7bd388b51adab07ce4b06715c9170d2b.ctex"]
 
 [params]
 

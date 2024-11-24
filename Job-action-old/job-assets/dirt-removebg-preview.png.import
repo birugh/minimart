@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://chlop34jwrejx"
-path="res://.godot/imported/char.png-65e93fe55e6aa51a3d1e9c8a48f7e2ae.ctex"
+uid="uid://bhy2yi4f6ywu6"
+path="res://.godot/imported/dirt-removebg-preview.png-7d6969f15b3e7e997a3aee65238a121e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/char.png"
-dest_files=["res://.godot/imported/char.png-65e93fe55e6aa51a3d1e9c8a48f7e2ae.ctex"]
+source_file="res://Job-action/job-assets/dirt-removebg-preview.png"
+dest_files=["res://.godot/imported/dirt-removebg-preview.png-7d6969f15b3e7e997a3aee65238a121e.ctex"]
 
 [params]
 
