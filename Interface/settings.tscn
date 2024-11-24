@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dtcevqe4ki62h"]
 
 [ext_resource type="Script" path="res://Scripts/settings.gd" id="1_g5qad"]
-[ext_resource type="Texture2D" uid="uid://c0pgrqb0mr2kb" path="res://Job-action-old/job-assets/169040.png" id="2_awey2"]
+[ext_resource type="Texture2D" uid="uid://c0pgrqb0mr2kb" path="res://Job-action/job-assets/169040.png" id="2_awey2"]
 
 [node name="Settings" type="Control"]
 layout_mode = 3

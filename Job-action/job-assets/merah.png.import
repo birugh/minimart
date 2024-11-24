@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bp50xxiefby4r"
-path="res://.godot/imported/hijau.png-7ad047e09250615354dface079aa2fa0.ctex"
+uid="uid://g0wfq0hj8m2j"
+path="res://.godot/imported/merah.png-a7dd98573b70ef8aa0eb046a1beac8e4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Job-action-old/job-assets/hijau.png"
-dest_files=["res://.godot/imported/hijau.png-7ad047e09250615354dface079aa2fa0.ctex"]
+source_file="res://Job-action/job-assets/merah.png"
+dest_files=["res://.godot/imported/merah.png-a7dd98573b70ef8aa0eb046a1beac8e4.ctex"]
 
 [params]
 

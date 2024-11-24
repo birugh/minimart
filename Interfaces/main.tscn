@@ -1,15 +1,17 @@
-[gd_scene load_steps=5 format=3 uid="uid://blkp40y57dwf2"]
+[gd_scene load_steps=6 format=3 uid="uid://blkp40y57dwf2"]
 
 [ext_resource type="Script" path="res://Scripts/main.gd" id="1_7j5e5"]
-[ext_resource type="PackedScene" uid="uid://cboa7qsgpwkht" path="res://maps/map_1.tscn" id="3_nu30d"]
-[ext_resource type="Texture2D" uid="uid://c0pgrqb0mr2kb" path="res://Job-action-old/job-assets/169040.png" id="4_lxl2a"]
+[ext_resource type="PackedScene" uid="uid://fo6euyk8cvxw" path="res://Job-action/job-scenes/Player.tscn" id="2_2ib57"]
+[ext_resource type="PackedScene" uid="uid://bbfta71fay73a" path="res://Job-action/job-scenes/Mart.tscn" id="3_swwob"]
+[ext_resource type="Texture2D" uid="uid://c0pgrqb0mr2kb" path="res://Job-action/job-assets/169040.png" id="4_lxl2a"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_28auc"]
 size = Vector2(200, 150)
 
 [node name="Main" type="Node"]
 script = ExtResource("1_7j5e5")
-map = ExtResource("3_nu30d")
+player = ExtResource("2_2ib57")
+map = ExtResource("3_swwob")
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
 offset_right = 1283.0

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c4jxjou7bqtm5"
-path="res://.godot/imported/abu.png-b182e7f78ea25a1bc8ad387ad9a0c70a.ctex"
+uid="uid://77r4dtb3sg8o"
+path="res://.godot/imported/Map (1).png-cd43f52892943e7d33eeb12a864c69e7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Job-action-old/job-assets/abu.png"
-dest_files=["res://.godot/imported/abu.png-b182e7f78ea25a1bc8ad387ad9a0c70a.ctex"]
+source_file="res://Job-action/job-assets/Map (1).png"
+dest_files=["res://.godot/imported/Map (1).png-cd43f52892943e7d33eeb12a864c69e7.ctex"]
 
 [params]
 

@@ -1,9 +1,9 @@
 [gd_scene load_steps=6 format=3 uid="uid://c5nka0q5uel4x"]
 
 [ext_resource type="Script" path="res://Scripts/play_menu.gd" id="1_n27gl"]
-[ext_resource type="Texture2D" uid="uid://c0pgrqb0mr2kb" path="res://Job-action-old/job-assets/169040.png" id="2_2ddps"]
+[ext_resource type="Texture2D" uid="uid://c0pgrqb0mr2kb" path="res://Job-action/job-assets/169040.png" id="2_2ddps"]
 [ext_resource type="Texture2D" uid="uid://b82uc3nhjxqtp" path="res://Assets/aset.png" id="2_ual75"]
-[ext_resource type="Texture2D" uid="uid://g0wfq0hj8m2j" path="res://Job-action-old/job-assets/merah.png" id="3_a6jsx"]
+[ext_resource type="Texture2D" uid="uid://g0wfq0hj8m2j" path="res://Job-action/job-assets/merah.png" id="3_a6jsx"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_rlbi1"]
 font_size = 38

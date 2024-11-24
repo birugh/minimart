@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cboa7qsgpwkht"]
 
-[ext_resource type="PackedScene" uid="uid://bbfta71fay73a" path="res://Job-action-old/job-scenes/Mart.tscn" id="1_cyr46"]
+[ext_resource type="PackedScene" uid="uid://bbfta71fay73a" path="res://Job-action/job-scenes/Mart.tscn" id="1_cyr46"]
 
 [node name="map1" type="Control"]
 layout_mode = 3
