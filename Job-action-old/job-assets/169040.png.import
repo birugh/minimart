@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bvpwg7hb8s8yt"
-path="res://.godot/imported/aset.png-702c9e33fbaf370b760e59281929c423.ctex"
+uid="uid://c0pgrqb0mr2kb"
+path="res://.godot/imported/169040.png-8d52baa21739ed1d90e612c0dd284c64.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Job-action/job-assets/aset.png"
-dest_files=["res://.godot/imported/aset.png-702c9e33fbaf370b760e59281929c423.ctex"]
+source_file="res://Job-action-old/job-assets/169040.png"
+dest_files=["res://.godot/imported/169040.png-8d52baa21739ed1d90e612c0dd284c64.ctex"]
 
 [params]
 

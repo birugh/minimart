@@ -1,9 +1,9 @@
 [gd_scene load_steps=19 format=4 uid="uid://cvhmj6r11lpld"]
 
 [ext_resource type="Script" path="res://Scripts/MultiplayerPeer/SceneManager.gd" id="1_btl0n"]
-[ext_resource type="PackedScene" uid="uid://k85v1qpvwydk" path="res://gameplay/player.tscn" id="2_76j74"]
-[ext_resource type="Texture2D" uid="uid://77r4dtb3sg8o" path="res://Job-action/job-assets/Map (1).png" id="3_d1om7"]
-[ext_resource type="PackedScene" uid="uid://fo6euyk8cvxw" path="res://Job-action/job-scenes/Player.tscn" id="4_0ohmc"]
+[ext_resource type="PackedScene" uid="uid://k85v1qpvwydk" path="res://gameplay-old/player.tscn" id="2_76j74"]
+[ext_resource type="Texture2D" uid="uid://77r4dtb3sg8o" path="res://Job-action-old/job-assets/Map (1).png" id="3_d1om7"]
+[ext_resource type="PackedScene" uid="uid://fo6euyk8cvxw" path="res://Job-action-old/job-scenes/Player.tscn" id="4_0ohmc"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_iiitg"]
 texture = ExtResource("3_d1om7")

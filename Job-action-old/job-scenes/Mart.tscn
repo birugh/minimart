@@ -1,7 +1,7 @@
 [gd_scene load_steps=17 format=4 uid="uid://bbfta71fay73a"]
 
-[ext_resource type="Texture2D" uid="uid://77r4dtb3sg8o" path="res://Job-action/job-assets/Map (1).png" id="1_r2vjx"]
-[ext_resource type="PackedScene" uid="uid://fo6euyk8cvxw" path="res://Job-action/job-scenes/Player.tscn" id="1_v1r56"]
+[ext_resource type="Texture2D" uid="uid://77r4dtb3sg8o" path="res://Job-action-old/job-assets/Map (1).png" id="1_r2vjx"]
+[ext_resource type="PackedScene" uid="uid://fo6euyk8cvxw" path="res://Job-action-old/job-scenes/Player.tscn" id="1_v1r56"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3a6i4"]
 texture = ExtResource("1_r2vjx")

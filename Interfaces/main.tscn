@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/main.gd" id="1_7j5e5"]
 [ext_resource type="PackedScene" uid="uid://cboa7qsgpwkht" path="res://maps/map_1.tscn" id="3_nu30d"]
-[ext_resource type="Texture2D" uid="uid://c0pgrqb0mr2kb" path="res://Job-action/job-assets/169040.png" id="4_lxl2a"]
+[ext_resource type="Texture2D" uid="uid://c0pgrqb0mr2kb" path="res://Job-action-old/job-assets/169040.png" id="4_lxl2a"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_28auc"]
 size = Vector2(200, 150)
