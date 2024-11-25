@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://tddv0grysovo"
-path="res://.godot/imported/menu game.mp3-899fe5d5b315ac6bdeef352c6554112f.mp3str"
+path="res://.godot/imported/menu game.mp3-3d68444aba4963f5a8ccefe639509a35.mp3str"
 
 [deps]
 
-source_file="res://Assets/sfx/menu game.mp3"
-dest_files=["res://.godot/imported/menu game.mp3-899fe5d5b315ac6bdeef352c6554112f.mp3str"]
+source_file="res://assets/sfx/menu game.mp3"
+dest_files=["res://.godot/imported/menu game.mp3-3d68444aba4963f5a8ccefe639509a35.mp3str"]
 
 [params]
 

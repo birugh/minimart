@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://5mp7f4mkanwq"
-path="res://.godot/imported/kasir.mp3-1d9ca6b7774b7edbf1b886b3dc312c4d.mp3str"
+path="res://.godot/imported/kasir.mp3-55a898539ff3e30fbf809716dfcc52f0.mp3str"
 
 [deps]
 
-source_file="res://Assets/sfx/kasir.mp3"
-dest_files=["res://.godot/imported/kasir.mp3-1d9ca6b7774b7edbf1b886b3dc312c4d.mp3str"]
+source_file="res://assets/sfx/kasir.mp3"
+dest_files=["res://.godot/imported/kasir.mp3-55a898539ff3e30fbf809716dfcc52f0.mp3str"]
 
 [params]
 

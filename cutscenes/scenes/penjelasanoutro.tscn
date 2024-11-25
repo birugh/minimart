@@ -1,0 +1,222 @@
+[gd_scene load_steps=8 format=3 uid="uid://cn616gal20dwk"]
+
+[ext_resource type="Script" path="res://cutscenes/scripts/penjelasanoutro.gd" id="1_8gl47"]
+[ext_resource type="Texture2D" uid="uid://j1cyabeymc1g" path="res://assets/cutscene/k1ac1xpb31wy.png" id="1_78m7y"]
+[ext_resource type="FontFile" uid="uid://bjpucpufshb5q" path="res://assets/Tiny5-Regular.ttf" id="2_h7ow4"]
+[ext_resource type="PackedScene" uid="uid://fkcmqsvkk6os" path="res://interfaces/main-menu.tscn" id="2_pp7y7"]
+
+[sub_resource type="Animation" id="Animation_rknxg"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("RichTextLabel:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("RichTextLabel:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(473, -1414)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("RichTextLabel:size")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1188, 2016)]
+}
+
+[sub_resource type="Animation" id="Animation_xy2gb"]
+resource_name = "outro"
+length = 60.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("RichTextLabel:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 4.96667, 12.4667, 14.7667, 18.8667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": ["[center]Disaat aku pulang, aku memberikan obat kepada ibu.", "[center]Ibu pun meminum obat itu, aku selalu berdoa supaya ibu sembuh dikemudian hari...", "[center]Ke esokan harinya...", "[center]Aku melihat ibuku yang sudah kembali sehat.", "[center]Aku tersenyum, dan bersyukur.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Terima kasih telah bermain
+
+Dibuat oleh:
+
+Game Designer: Biru
+Programmer: Ezwan & Biru
+Composer: Biru
+Writer: Lulu, Tiara, Rasya dan Jihan
+SFX: Rasya
+
+Special Thanks
+
+Clevio
+YouTube
+ChatGPT
+Github
+Spotify
+Microsoft Edge
+Chrome
+Figma
+Godot
+Thinkpad
+Asus Vivobook
+Spriters Resource
+Stardew Valley Assets
+
+FinePointCGI
+Gwizz
+16BitDev
+AlexHoratio
+Brett Makes Games
+SmoothSoftware
+Coding Quests
+Abra
+Godotneers
+Mostly Mad Productions
+Godot Documentations
+
+
+Keluarga & Teman yang selalu mendukung 🙏
+Tools yang Digunakan
+
+Engine: Godot 4
+Editor: Godot 4, Visual Studio Code, dan Notepad+
+Asset Tools: Paint. NET dan Figma
+
+Hak Cipta
+© 2024 Team Minimart. Semua Hak Dilindungi.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Sampai jumpa di petualangan berikutnya."]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("RichTextLabel:visible_ratio")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 2.6, 3.5, 4.96667, 6.56667, 8.76667, 10.1333, 12.4667, 13.7333, 13.9, 13.9333, 14.0681, 14.1, 14.2333, 14.2667, 14.4295, 14.7667, 16.3, 17.2667, 18.8667, 20.2918, 20.9333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 1.0, 1.0, 0.0, 0.307465, 1.0, 1.0, 0.0, 0.944, 0.944, 0.969, 0.969, 0.99, 0.99, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 0.055, 1.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("RichTextLabel:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(20.9667, 47.2333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(473, 305), Vector2(473, -2280)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("RichTextLabel:size")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(20.8667, 20.9, 47.2333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(356, 2500), Vector2(362.35, 3000), Vector2(362.35, 3000)]
+}
+tracks/4/type = "method"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath(".")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(51),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"change_scene"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_2ubwj"]
+_data = {
+"RESET": SubResource("Animation_rknxg"),
+"outro": SubResource("Animation_xy2gb")
+}
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_8gl47")
+next_scene = ExtResource("2_pp7y7")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_78m7y")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_2ubwj")
+}
+autoplay = "outro"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 473.0
+offset_top = -1414.0
+offset_right = 1661.0
+offset_bottom = 602.0
+theme_override_fonts/normal_font = ExtResource("2_h7ow4")
+theme_override_font_sizes/normal_font_size = 26
+bbcode_enabled = true
+text = "[center]Disaat aku pulang, aku memberikan obat kepada ibu."

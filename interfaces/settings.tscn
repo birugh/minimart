@@ -1,0 +1,127 @@
+[gd_scene load_steps=3 format=3 uid="uid://dtcevqe4ki62h"]
+
+[ext_resource type="Script" path="res://scripts/settings.gd" id="1_lqsep"]
+[ext_resource type="Texture2D" uid="uid://c0pgrqb0mr2kb" path="res://assets/169040.png" id="2_okqjl"]
+
+[node name="Settings" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_lqsep")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_right = 1283.0
+offset_bottom = 731.0
+texture = ExtResource("2_okqjl")
+region_rect = Rect2(0, 0, 1500, 514.293)
+
+[node name="TabContainer" type="TabContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 247.0
+offset_top = 139.0
+offset_right = -247.0
+offset_bottom = -242.0
+grow_horizontal = 2
+grow_vertical = 2
+current_tab = 0
+
+[node name="Volume" type="TabBar" parent="TabContainer"]
+layout_mode = 2
+metadata/_tab_index = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="TabContainer/Volume"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 60
+theme_override_constants/margin_top = 30
+theme_override_constants/margin_right = 60
+theme_override_constants/margin_bottom = 30
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Volume/MarginContainer"]
+layout_mode = 2
+
+[node name="Volume_Label" type="Label" parent="TabContainer/Volume/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Volume"
+
+[node name="Volume" type="HSlider" parent="TabContainer/Volume/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Volume_Mute_Label" type="Label" parent="TabContainer/Volume/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Mute"
+
+[node name="Volume_Mute" type="CheckBox" parent="TabContainer/Volume/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Graphics" type="TabBar" parent="TabContainer"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="MarginContainer2" type="MarginContainer" parent="TabContainer/Graphics"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 60
+theme_override_constants/margin_top = 30
+theme_override_constants/margin_right = 60
+theme_override_constants/margin_bottom = 30
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Graphics/MarginContainer2"]
+layout_mode = 2
+
+[node name="NinePatchRect" type="NinePatchRect" parent="TabContainer/Graphics/MarginContainer2/VBoxContainer"]
+visible = false
+layout_mode = 2
+texture = ExtResource("2_okqjl")
+region_rect = Rect2(0, 0, 1500, 523.184)
+
+[node name="Resolutions_Label" type="Label" parent="TabContainer/Graphics/MarginContainer2/VBoxContainer"]
+layout_mode = 2
+text = "Resolutions"
+
+[node name="Resolutions" type="OptionButton" parent="TabContainer/Graphics/MarginContainer2/VBoxContainer"]
+layout_mode = 2
+item_count = 3
+popup/item_0/text = "1920x1080"
+popup/item_1/text = "1366x768"
+popup/item_1/id = 1
+popup/item_2/text = "1280x720"
+popup/item_2/id = 2
+
+[node name="Fullscreen_Label2" type="Label" parent="TabContainer/Graphics/MarginContainer2/VBoxContainer"]
+layout_mode = 2
+text = "Fullscreen
+"
+
+[node name="Fullscreen" type="CheckBox" parent="TabContainer/Graphics/MarginContainer2/VBoxContainer"]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 248.0
+offset_top = 484.0
+offset_right = 339.0
+offset_bottom = 546.0
+text = "Ok"
+
+[connection signal="value_changed" from="TabContainer/Volume/MarginContainer/VBoxContainer/Volume" to="." method="_on_volume_value_changed"]
+[connection signal="toggled" from="TabContainer/Volume/MarginContainer/VBoxContainer/Volume_Mute" to="." method="_on_check_box_toggled"]
+[connection signal="item_selected" from="TabContainer/Graphics/MarginContainer2/VBoxContainer/Resolutions" to="." method="_on_resolutions_item_selected"]
+[connection signal="toggled" from="TabContainer/Graphics/MarginContainer2/VBoxContainer/Fullscreen" to="." method="_on_fullscreen_toggled"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

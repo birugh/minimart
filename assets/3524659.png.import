@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dov0ol13q85wi"
-path="res://.godot/imported/aset.png-ffb09c43fe27a31462e7dc9497d0effe.ctex"
+uid="uid://c42i2bt70h8fw"
+path="res://.godot/imported/3524659.png-ef2b27e85f02676db2cc8de898b4e765.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/cutscene/aset.png"
-dest_files=["res://.godot/imported/aset.png-ffb09c43fe27a31462e7dc9497d0effe.ctex"]
+source_file="res://assets/3524659.png"
+dest_files=["res://.godot/imported/3524659.png-ef2b27e85f02676db2cc8de898b4e765.ctex"]
 
 [params]
 

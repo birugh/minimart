@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://b2vghg1d0dktr"
-path="res://.godot/imported/mengepel.mp3-ef9449a1d1ec2468d6d7f1dbcc9fe43a.mp3str"
+path="res://.godot/imported/mengepel.mp3-2d08ab598e8fd1f047fc8d2e6301f653.mp3str"
 
 [deps]
 
-source_file="res://Assets/sfx/mengepel.mp3"
-dest_files=["res://.godot/imported/mengepel.mp3-ef9449a1d1ec2468d6d7f1dbcc9fe43a.mp3str"]
+source_file="res://assets/sfx/mengepel.mp3"
+dest_files=["res://.godot/imported/mengepel.mp3-2d08ab598e8fd1f047fc8d2e6301f653.mp3str"]
 
 [params]
 

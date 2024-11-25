@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dov0ol13q85wi"
-path="res://.godot/imported/aset.png-ffb09c43fe27a31462e7dc9497d0effe.ctex"
+uid="uid://g0wfq0hj8m2j"
+path="res://.godot/imported/merah.png-ba6376c37f47ceb16ece01d22cabbf25.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/cutscene/aset.png"
-dest_files=["res://.godot/imported/aset.png-ffb09c43fe27a31462e7dc9497d0effe.ctex"]
+source_file="res://assets/merah.png"
+dest_files=["res://.godot/imported/merah.png-ba6376c37f47ceb16ece01d22cabbf25.ctex"]
 
 [params]
 

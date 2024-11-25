@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://dehueu8p6xwx7"
-path="res://.godot/imported/langkah kaki.mp3-b3c262cd48bc3e36a8d248df0a215756.mp3str"
+path="res://.godot/imported/langkah kaki.mp3-3f825e202e2c97eb366558d6ae9ea2b0.mp3str"
 
 [deps]
 
-source_file="res://Assets/sfx/langkah kaki.mp3"
-dest_files=["res://.godot/imported/langkah kaki.mp3-b3c262cd48bc3e36a8d248df0a215756.mp3str"]
+source_file="res://assets/sfx/langkah kaki.mp3"
+dest_files=["res://.godot/imported/langkah kaki.mp3-3f825e202e2c97eb366558d6ae9ea2b0.mp3str"]
 
 [params]
 

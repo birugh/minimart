@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://bj0we4xdfa3cl"
-path="res://.godot/imported/game berakhir.mp3-9d95ba1ce457a9b8912cb5184e42ebc3.mp3str"
+path="res://.godot/imported/game berakhir.mp3-dd00eb8da5154dcb1a7423a8987f44e5.mp3str"
 
 [deps]
 
-source_file="res://Assets/sfx/game berakhir.mp3"
-dest_files=["res://.godot/imported/game berakhir.mp3-9d95ba1ce457a9b8912cb5184e42ebc3.mp3str"]
+source_file="res://assets/sfx/game berakhir.mp3"
+dest_files=["res://.godot/imported/game berakhir.mp3-dd00eb8da5154dcb1a7423a8987f44e5.mp3str"]
 
 [params]
 

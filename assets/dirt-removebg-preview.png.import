@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dov0ol13q85wi"
-path="res://.godot/imported/aset.png-ffb09c43fe27a31462e7dc9497d0effe.ctex"
+uid="uid://bhy2yi4f6ywu6"
+path="res://.godot/imported/dirt-removebg-preview.png-7f9a28469469d93b90d88f5c2ce5a8aa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/cutscene/aset.png"
-dest_files=["res://.godot/imported/aset.png-ffb09c43fe27a31462e7dc9497d0effe.ctex"]
+source_file="res://assets/dirt-removebg-preview.png"
+dest_files=["res://.godot/imported/dirt-removebg-preview.png-7f9a28469469d93b90d88f5c2ce5a8aa.ctex"]
 
 [params]
 

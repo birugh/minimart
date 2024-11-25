@@ -11,18 +11,18 @@ config_version=5
 [application]
 
 config/name="Minimart"
-run/main_scene="res://Interface/main_menu.tscn"
+run/main_scene="res://interfaces/main-menu.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [autoload]
 
 GameManager="*res://Scripts/MultiplayerPeer/GameManager.gd"
-Dirt="*res://Job-action/job-scripts/dirt.gd"
-Stocks="*res://Job-action/job-scripts/stocks.gd"
-Mart="*res://Job-action/job-scripts/mart.gd"
-Items="*res://Job-action/job-scripts/items.gd"
-Foods="*res://Job-action/job-scripts/foods.gd"
+Dirt="*res://scripts/job-scripts/dirt.gd"
+Stocks="*res://scripts/job-scripts/stocks.gd"
+Mart="*res://scripts/job-scripts/mart.gd"
+Items="*res://scripts/job-scripts/items.gd"
+Foods="*res://scripts/job-scripts/foods.gd"
 
 [display]
 

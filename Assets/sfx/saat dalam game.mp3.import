@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://dcxhtdyn3ndnh"
-path="res://.godot/imported/saat dalam game.mp3-73ed29bda431da0bd6b7180b77beda6b.mp3str"
+path="res://.godot/imported/saat dalam game.mp3-6a255bf8c39b067709b61ea830ae7bcb.mp3str"
 
 [deps]
 
-source_file="res://Assets/sfx/saat dalam game.mp3"
-dest_files=["res://.godot/imported/saat dalam game.mp3-73ed29bda431da0bd6b7180b77beda6b.mp3str"]
+source_file="res://assets/sfx/saat dalam game.mp3"
+dest_files=["res://.godot/imported/saat dalam game.mp3-6a255bf8c39b067709b61ea830ae7bcb.mp3str"]
 
 [params]
 
