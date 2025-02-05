@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://8nm5j51jbd25"]
 
 [ext_resource type="Script" path="res://scripts/job-scripts/dirt.gd" id="1_aok5k"]
-[ext_resource type="Texture2D" uid="uid://bhy2yi4f6ywu6" path="res://assets/dirt-removebg-preview.png" id="2_8j3fj"]
+[ext_resource type="Texture2D" uid="uid://bhy2yi4f6ywu6" path="res://Asset/dirt-removebg-preview.png" id="2_8j3fj"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_mtxxk"]
 radius = 24.7386

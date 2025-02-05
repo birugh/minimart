@@ -1,9 +1,11 @@
 [gd_scene load_steps=36 format=3 uid="uid://cn4ttgt6ypyqj"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_47p64"]
-[ext_resource type="FontFile" uid="uid://bjpucpufshb5q" path="res://assets/Tiny5-Regular.ttf" id="2_n2thl"]
-[ext_resource type="Texture2D" uid="uid://bli8pk6mvutnd" path="res://icon.svg" id="3_b36pa"]
-[ext_resource type="Texture2D" uid="uid://bp50xxiefby4r" path="res://assets/hijau.png" id="4_has8l"]
+[ext_resource type="FontFile" uid="uid://bjpucpufshb5q" path="res://Asset/Tiny5-Regular.ttf" id="2_n2thl"]
+[ext_resource type="Texture2D" uid="uid://bp50xxiefby4r" path="res://Asset/hijau.png" id="4_has8l"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_sqd1c"]
+load_path = "res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex"
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_r2xqx"]
 atlas = ExtResource("4_has8l")
@@ -265,7 +267,7 @@ text = "You"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 visible = false
-texture = ExtResource("3_b36pa")
+texture = SubResource("CompressedTexture2D_sqd1c")
 
 [node name="Stocker" type="AnimatedSprite2D" parent="."]
 position = Vector2(8.5, 9.24997)
